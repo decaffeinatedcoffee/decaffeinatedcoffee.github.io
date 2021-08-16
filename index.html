@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheese</title>
+</head>
+
+<style>
+body{
+
+background-color: rgb(255, 255, 159);
+
+}
+
+
+
+@media (max-width: 1200px)
+{
+  
+
+.cheese{
+position: absolute;
+margin-top: 6%;
+margin-left: 0%;
+font-size: 1500%;
+text-decoration: none;
+background:none;
+border:none;
+cursor: pointer;
+}
+
+.cheesecheese {
+position: absolute;
+color: rgb(105, 21, 21);
+font-size: 20px;
+margin-top: 20px;
+margin-left: 20px;
+text-decoration: none;
+cursor: pointer;
+}
+
+
+.github{
+position: absolute;  
+width: 20px;
+margin-left: 10%;
+margin-top: 430px;
+}
+
+
+.linkgithub{
+
+    position: absolute; 
+    margin-left: 17.5%;
+margin-top: 433px;
+text-decoration: blue ;
+font-size: 15px;
+
+}
+}
+
+
+
+
+
+
+@media (min-width: 1201px)
+{
+  
+
+.cheese{
+position: absolute;
+margin-left: 26%;
+font-size: 3300%;
+text-decoration: none;
+background:none;
+border:none;
+cursor: pointer;
+}
+
+.cheesecheese {
+position: absolute;
+color: rgb(105, 21, 21);
+font-size: 40px;
+margin-top: 40px;
+margin-left: 40px;
+text-decoration: none;
+cursor: pointer;
+}
+
+
+.github{
+position: absolute;  
+width: 50px;
+margin-left: 85%;
+}
+
+
+.linkgithub{
+
+    position: absolute; 
+margin-left: 89%;
+margin-top: 1%;
+text-decoration: blue ;
+
+}
+}
+</style>
+<body>
+
+   
+
+
+    <button class="cheese" onclick="start()" >&#x1F9C0;</button>
+    
+
+
+
+<p class="cheesecheese" onclick="start()">CHEESE</p>
+
+<a href="https://github.com/decaffeinatedcoffee" class="linkgithub"> GitHub
+</a>
+<a href="https://github.com/decaffeinatedcoffee">
+<img src="assets/githublogo.png" alt="githublogo" class="github">
+</a>
+<audio src="assets/cheese.mp3" id="audio" preload="metadata"></audio>
+
+</body>
+
+
+<script>
+
+
+function start() {
+
+document.getElementById("audio").play();
+
+console.log(innerWidth);
+
+}
+
+
+
+
+</script>
+</html>
