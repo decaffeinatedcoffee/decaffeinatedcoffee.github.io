@@ -91,7 +91,81 @@ display: none;
 
 position: absolute;
 margin-left: 11%;
-margin-top: 92%;
+margin-top: 100%;
+}
+
+/* The switch by w3schools: https://www.w3schools.com/howto/howto_css_switch.asp */
+.switch {
+  position: absolute;
+  display: inline-block;
+  width: 35px;
+  height: 23px;
+  margin-top: 430px;
+  margin-left: 150px;
+}
+
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(252, 127, 127);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 2px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2d17f5;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2d17f5;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(18px);
+  -ms-transform: translateX(18px);
+  transform: translateX(18px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/*End of w3schools code */
+
+
+#scare{
+    position: absolute;
+    margin-top: 10.1%;
+    margin-top: 433px;
+  margin-left: 190px;
+
 }
 
 }
@@ -172,6 +246,80 @@ position: absolute;
 margin-left: 35%;
 margin-top: 53%;
 }
+
+/* The switch by w3schools: https://www.w3schools.com/howto/howto_css_switch.asp */
+.switch {
+  position: absolute;
+  display: inline-block;
+  width: 35px;
+  height: 23px;
+  margin-top: 10%;
+  margin-left: 30px;
+}
+
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(252, 127, 127);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 2px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2d17f5;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2d17f5;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(18px);
+  -ms-transform: translateX(18px);
+  transform: translateX(18px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/*End of w3schools code */
+
+
+#scare{
+    position: absolute;
+    margin-top: 10.1%;
+margin-left: 75px;
+font-size: 17px;
+
+}
 }
 
 @media (min-width: 1201px)
@@ -250,6 +398,81 @@ display: none;
     margin-left: 37%;
     margin-top: 39%;
 }
+
+
+/* The switch by w3schools: https://www.w3schools.com/howto/howto_css_switch.asp */
+.switch {
+  position: absolute;
+  display: inline-block;
+  width: 35px;
+  height: 23px;
+  margin-top: 10%;
+  margin-left: 30px;
+}
+
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(252, 127, 127);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 2px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2d17f5;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2d17f5;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(18px);
+  -ms-transform: translateX(18px);
+  transform: translateX(18px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/*End of w3schools code */
+
+
+#scare{
+    position: absolute;
+    margin-top: 10.1%;
+margin-left: 75px;
+font-size: 17px;
+
+}
 }
 </style>
 <body>
@@ -276,25 +499,68 @@ display: none;
 
 <h2 id="eat">Click on the cheese to eat</h2>
 
+<label class="switch" id="switch" > 
+    <input type="checkbox" checked="true" onclick="smode()" value="on" id="checkboxx">
+    <span class="slider round"></span>
+  </label>
+
+<p id="scare">Scare mode (default on)</p>
+
+
 </body>
 
 
 <script>
 
+var trueorfalse = true;
 var counter = "0";
+
+
+function smode(){
+
+if(document.getElementById("checkboxx").value == "on"){
+
+ document.getElementById("checkboxx").value = "off"
+
+}
+else{
+    document.getElementById("checkboxx").value = "on"
+
+}
+
+
+if(document.getElementById("checkboxx").value == "on"){
+   trueorfalse = true;
+   counter = "0"
+}
+else{
+   trueorfalse = false;
+   counter = "0"
+}
+
+}
+
+
+
+
+
+
 
 function start() {
 document.getElementById("eat").style.display = "none";
 counter++;
-if(counter >= "10"){
+if(counter >= "10" && trueorfalse == true){
     document.getElementById("audio2").play();
-    fade();
 
 }
 else{
 
     document.getElementById("audio").play();
 
+}
+
+if(counter >= "10"){
+    fade();
 }
 
 }
