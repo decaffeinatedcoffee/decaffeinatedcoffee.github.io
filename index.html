@@ -30,6 +30,7 @@ text-decoration: none;
 background:none;
 border:none;
 cursor: pointer;
+
 }
 
 .cheesecheese {
@@ -68,6 +69,23 @@ font-size: 15px;
 width: 200px;
 
 }
+
+#number{
+position: absolute;
+margin-top: 200px;
+margin-left: 45%;
+font-size: 30px;
+display: none;
+
+}
+#youate{
+ position: absolute;
+margin-top: 150px;
+margin-left: 4%;
+font-size: 30px;
+display: none;
+
+}
 }
 
 
@@ -87,6 +105,9 @@ text-decoration: none;
 background:none;
 border:none;
 cursor: pointer;
+clip-path: polygon(auto);
+
+
 }
 
 .cheesecheese {
@@ -121,6 +142,25 @@ text-decoration: blue ;
     margin-left: 40px;
 width: 490px;
 
+
+}
+
+
+#number{
+position: absolute;
+margin-top: 300px;
+margin-left: 720px;
+font-size: 30px;
+display: none;
+
+}
+
+#youate{
+ position: absolute;
+margin-top: 250px;
+margin-left: 580px;
+font-size: 30px;
+display: none;
 }
 }
 </style>
@@ -129,7 +169,7 @@ width: 490px;
    
 
 
-    <button class="cheese" onclick="start()" > <img src="assets/cheesepng.png" class="imageofcheese"> </button>
+    <button class="cheese" onclick="start()" id="cheese"> <img src="assets/cheesepng.png" class="imageofcheese"> </button>
     
 
 
@@ -143,7 +183,8 @@ width: 490px;
 </a>
 <audio src="assets/cheese.mp3" id="audio" preload="metadata"></audio>
 <audio src="assets/cheese2.mp3" id="audio2" preload="metadata"></audio>
-
+<p id="number"></p>
+<p id="youate">You ate too much cheese!</p>
 </body>
 
 
@@ -152,16 +193,11 @@ width: 490px;
 var counter = "0";
 
 function start() {
-    setTimeout(speak, 50);
-    
-}
-    
-    
-function speak() {
 
 counter++;
 if(counter >= "10"){
     document.getElementById("audio2").play();
+    fade();
 
 }
 else{
@@ -173,7 +209,135 @@ else{
 }
 
 
+function fade1() {
 
 
+document.getElementById("cheese").style.opacity = 0.9
+document.getElementById("cheese").disabled = true;
+counter = 0
+}
+
+
+function fade2() {
+
+    document.getElementById("cheese").style.opacity = 0.6
+
+    
+}
+
+
+function fade3() {
+
+
+    document.getElementById("cheese").style.opacity = 0.3
+    
+}
+
+
+function fade4() {
+
+    document.getElementById("cheese").style.opacity = 0.0
+    counterstart();
+    
+}
+
+
+function fade() {
+
+setTimeout(fade1,100);
+setTimeout(fade2,200);
+setTimeout(fade3,300);
+setTimeout(fade4,400);
+
+
+
+}
+
+
+
+function counter4(){
+var varcounter = "4";
+document.getElementById("number").style.display = "block";
+document.getElementById("youate").style.display = "block";
+document.getElementById("number").innerHTML = varcounter;
+}
+
+function counter3(){
+var varcounter = "3";
+document.getElementById("number").innerHTML = varcounter;
+}
+
+function counter2(){
+var varcounter = "2";
+document.getElementById("number").innerHTML = varcounter;
+}
+
+function counter1(){
+var varcounter = "1";
+document.getElementById("number").innerHTML = varcounter;
+}
+function counter0(){
+document.getElementById("number").style.display = "none";
+document.getElementById("youate").style.display = "none";
+cheeseback();
+}
+
+function counterstart() {
+setTimeout(counter4, 1000);
+setTimeout(counter3, 2000);
+setTimeout(counter2, 3000);
+setTimeout(counter1, 4000);
+setTimeout(counter0, 5000);
+}
+
+
+
+
+function back1() {
+
+
+document.getElementById("cheese").style.opacity = 0.0
+document.getElementById("cheese").disabled = false;
+}
+
+
+function back2() {
+
+    document.getElementById("cheese").style.opacity = 0.3
+
+    
+}
+
+
+function back3() {
+
+
+    document.getElementById("cheese").style.opacity = 0.6
+    
+}
+
+
+function back4() {
+
+    document.getElementById("cheese").style.opacity = 0.9
+       
+}
+
+
+
+
+
+
+
+
+
+function cheeseback() {
+setTimeout(back1,100);
+setTimeout(back2,200);
+setTimeout(back3,300);
+setTimeout(back4,400);
+
+
+}
 </script>
 </html>
