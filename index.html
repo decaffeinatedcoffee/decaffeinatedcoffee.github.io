@@ -142,16 +142,27 @@ width: 490px;
 <img src="assets/githublogo.png" alt="githublogo" class="github">
 </a>
 <audio src="assets/cheese.mp3" id="audio" preload="metadata"></audio>
+<audio src="assets/cheese2.mp3" id="audio2" preload="metadata"></audio>
 
 </body>
 
 
 <script>
 
+var counter = "0";
 
 function start() {
 
-document.getElementById("audio").play();
+counter++;
+if(counter >= "10"){
+    document.getElementById("audio2").play();
+
+}
+else{
+
+    document.getElementById("audio").play();
+
+}
 
 }
 
