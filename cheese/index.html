@@ -86,6 +86,14 @@ font-size: 30px;
 display: none;
 
 }
+
+#eat{
+
+position: absolute;
+margin-left: 11%;
+margin-top: 92%;
+}
+
 }
 
 @media screen and (min-width: 701px) and (max-width: 1200px)
@@ -156,6 +164,13 @@ margin-left: 34%;
 font-size: 30px;
 display: none ;
 
+}
+
+#eat{
+
+position: absolute;
+margin-left: 35%;
+margin-top: 53%;
 }
 }
 
@@ -228,6 +243,13 @@ margin-left: 580px;
 font-size: 30px;
 display: none;
 }
+
+#eat{
+
+    position: absolute;
+    margin-left: 37%;
+    margin-top: 39%;
+}
 }
 </style>
 <body>
@@ -251,6 +273,9 @@ display: none;
 <audio src="assets/cheese2.mp3" id="audio2" preload="metadata"></audio>
 <p id="number"></p>
 <p id="youate">You ate too much cheese!</p>
+
+<h2 id="eat">Click on the cheese to eat</h2>
+
 </body>
 
 
@@ -259,7 +284,7 @@ display: none;
 var counter = "0";
 
 function start() {
-
+document.getElementById("eat").style.display = "none";
 counter++;
 if(counter >= "10"){
     document.getElementById("audio2").play();
