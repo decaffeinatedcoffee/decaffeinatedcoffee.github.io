@@ -311,7 +311,11 @@ cursor: pointer;
 
 
 <script>
-console.log(innerWidth);
+document.getElementById("listaidiomas").style.display = "none";
+document.getElementById("portugues").style.display = "none";
+document.getElementById("english").style.display = "none";
+document.getElementById("deutsch").style.display = "none";
+
 function showoptions(){
 
 if(document.getElementById("listaidiomas").style.display == "none"){
@@ -326,11 +330,10 @@ else{
     document.getElementById("listaidiomas").style.display = "none";
 document.getElementById("portugues").style.display = "none";
 document.getElementById("english").style.display = "none";
-
+document.getElementById("deutsch").style.display = "none";
 }
 
 }
-
 
 function turnenglish (){
 
