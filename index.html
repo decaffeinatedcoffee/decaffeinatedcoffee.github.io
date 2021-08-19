@@ -77,7 +77,7 @@ margin-top: 31%;
 text-decoration: none;
 color: black;
 cursor: pointer;
-margin-top: 7px;
+margin-top: 10px;
 }
 
 .opcoesidiomas{
@@ -163,7 +163,6 @@ margin-top: 18%;
 text-decoration: none;
 color: black;
 cursor: pointer;
-    
 }
 
 .opcoesidiomas{
@@ -178,7 +177,7 @@ cursor: pointer;
 }
 
 
-    @media (min-width: 1000px){
+    @media (min-width: 1100px){
 body{
  background-color: #95fce7;     
 }
@@ -198,6 +197,7 @@ margin-top: 4%;
 }
 
 .listas{
+
     position: absolute;
 margin-left: 30%;
 margin-top: 6%;
@@ -212,11 +212,6 @@ margin-left: 30.3%;
 margin-top: 8%;
 }
 
-.link{
-    position: absolute;
- margin-left: 40%;
-margin-top: 8%;  
-}
 
 .lang{
     position: absolute;
@@ -272,10 +267,26 @@ cursor: pointer;
     <p class="subtitulo" id="subtitulo">Você pode ver algumas das minhas páginas legais abaixo:</p>
 
     <ul class="listas">
-        <a href="https://decaffeinatedcoffee.github.io/cheese/" class="link">
-       <li>Cheese</li>
+
+        <a href="https://decaffeinatedcoffee.github.io/cheese/"  class="link">
+       <li >Cheese</li>
+    </a>
+
+
+    <a href="https://decaffeinatedcoffee.github.io/tabuada/" class="link">
+
+    <li >Tabuada</li>
+
+
     </a>
     </ul>
+
+
+
+
+
+
+
     <br>
     <a href="https://github.com/decaffeinatedcoffee" class="redirecionar" id="redirecionar">
     <p >Ou você pode voltar ao meu perfil </p> </a>
@@ -311,6 +322,8 @@ cursor: pointer;
 
 
 <script>
+
+
 document.getElementById("listaidiomas").style.display = "none";
 document.getElementById("portugues").style.display = "none";
 document.getElementById("english").style.display = "none";
@@ -335,37 +348,41 @@ document.getElementById("deutsch").style.display = "none";
 
 }
 
+
 function turnenglish (){
 
-    
+    document.documentElement.setAttribute('lang','en');
     document.getElementById("titulo").innerHTML = "I think there's nothing cool here";
     document.getElementById("subtitulo").innerHTML = "you can see some of my cool pages below";
     document.getElementById("redirecionar").innerHTML = "Or you can go back to my GitHub profile";
     document.getElementById("listaidiomas").style.display = "none";
     document.getElementById("portugues").style.display = "none";
     document.getElementById("english").style.display = "none";
+    document.getElementById("deutsch").style.display = "none";
 
 }
 
 function turnportugues (){
+    document.documentElement.setAttribute('lang','pt-br');
     document.getElementById("titulo").innerHTML = "Acho que não tem nada legal aqui!";
     document.getElementById("subtitulo").innerHTML = "Você pode ver algumas das minhas páginas legais abaixo:";
     document.getElementById("redirecionar").innerHTML = "Ou você pode voltar ao meu perfil";
     document.getElementById("listaidiomas").style.display = "none";
     document.getElementById("portugues").style.display = "none";
     document.getElementById("english").style.display = "none";
+    document.getElementById("deutsch").style.display = "none";
     
 }
 
 function turndeutsch(){
-
+    document.documentElement.lang = "de";
     document.getElementById("titulo").innerHTML = "Ich glaube, hier ist nichts cooles";
     document.getElementById("subtitulo").innerHTML = "Sie können einige meiner coolen Seiten unten sehen:";
     document.getElementById("redirecionar").innerHTML = "Oder gehen Sie zurück zu meinem Profil auf GitHub";
     document.getElementById("listaidiomas").style.display = "none";
     document.getElementById("portugues").style.display = "none";
     document.getElementById("english").style.display = "none";
-
+    document.getElementById("deutsch").style.display = "none";
 
 }
 
