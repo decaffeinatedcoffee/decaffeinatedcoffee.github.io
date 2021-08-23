@@ -583,6 +583,9 @@ fetch("https://ipinfo.io/json")
     return respostaclima.json();
   })
   .then(function (obtendoclima) {
+      if(obtendoclima.message == "Invalid API key. Please see http://openweathermap.org/faq#error401 for more info."){
+  location.reload();
+    }
     var temperatura = Math.round(obtendoclima.list[0].main.temp);
   var obtercond = obtendoclima.list[0].weather[0].description
   var maxima = Math.round(obtendoclima.list[0].main.temp_max);
