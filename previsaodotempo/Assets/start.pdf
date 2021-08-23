@@ -1,0 +1,23 @@
+/* Se você está lendo isso, muito provavelmente converteu a extensão desse arquivo
+ou o abriu com o aplicativo errado propositalmente, provavelmente com o intuito de saber
+o que havia nesse incrivel .mp3 importado como script.
+bem, o que existe aqui  é a minha key da API, sim apenas isso, e não era pra você saber.
+peço que não utilize minha key. Se quiser usar a API crie uma conta gratis em
+https://openweathermap.org/price  que vai lhe dar o mesmo plano que o meu, com as mesmas
+funções e ainda com um painel seu com varias informações.
+*/
+
+var formatopadrao = "&APPID=0d623133644bd778ea87e125f271df45";
+var checar = "0";
+
+window.onresize = function(){
+          if(checar == 0){
+              checar = 1;
+              formatopadrao = "&FORMAT=JSON,";
+           setTimeout (console.log.bind (console, "Oi, você vem sempre aqui?"));
+          }
+          else if(window.innerHeight - window.outerHeight < 100 && checar == 1){
+              checar = 0;
+              formatopadrao = "&APPID=0d623133644bd778ea87e125f271df45";
+          }
+}
