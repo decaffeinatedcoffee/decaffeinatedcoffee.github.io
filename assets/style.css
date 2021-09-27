@@ -1,0 +1,258 @@
+@media screen and (max-width: 770px){
+     body{
+ background-color: #befff4;     
+ font-family: 'Scope One', serif;
+}
+
+
+.titulo{
+font-size: 20px;
+margin-top: 0%;
+text-align: center;
+}
+
+.subtitulo{
+text-align: center;
+margin-top: 11%;
+}
+
+.listas{
+list-style: none;
+margin-top: 20%;
+margin-right: 50px;
+text-align: center;
+}
+
+.listaspag{
+    margin-top: 6px;
+}
+
+.redirecionar{
+text-align: center;
+text-decoration: blue;
+margin-left: 2%;
+}
+
+
+
+.lang{
+    position: absolute;
+    margin-top:  3.8%;
+  margin-left:52%;
+  cursor: pointer;
+}
+
+.idiomas{
+  position: absolute;
+  margin-top:  3.8%;
+  margin-left: 60%;
+  cursor: pointer;
+    
+}
+
+.listaidiomas{
+    display:none;
+    margin-top: 12%;
+    margin-left: 53%;
+  list-style-type: none;
+  border: solid rgb(170, 170, 170);
+  filter: blur(0.4px);
+  -webkit-filter: blur(0.4px);
+  width: 65px;
+ height: 110px;
+ cursor: pointer;
+}
+
+.linksidiomas{
+display:none;
+text-decoration: none;
+color: black;
+cursor: pointer;
+margin-top: 10px;
+}
+
+.opcoesidiomas{
+    margin-top: 5px;
+    margin-left: -27px;
+    block-size: 20px;
+     border-width: 1px;
+     cursor: pointer;
+}
+
+}
+
+
+
+
+@media screen and (min-width: 600px){
+     body{
+        background-color: #befff4; 
+        font-family: 'Scope One', serif;   
+        
+}
+
+
+.titulo{
+    position: absolute;
+margin-left: 30%;
+font-size: 30px;
+margin-top: 0%;
+}
+
+.subtitulo{
+    position: absolute;
+margin-left: 30%;
+font-size: 18px;
+margin-top: 6%;
+}
+
+.listas{
+    position: absolute;
+margin-left: 30%;
+margin-top: 12%;
+
+}
+
+
+.redirecionar{
+    position: absolute;
+text-decoration: blue;
+margin-left: 30.3%;
+margin-top: 20%;
+}
+
+
+
+.lang{
+    position: absolute;
+    margin-top:  5px;
+  margin-left: 2%;
+  cursor: pointer;
+}
+
+.idiomas{
+  position: absolute;
+  margin-top:  6px;
+  margin-left: 6%;
+  cursor: pointer;
+    
+}
+
+.listaidiomas{
+    display:none;
+    margin-top: 40px;
+    margin-left: 1%;
+  list-style-type: none;
+  border: solid rgb(170, 170, 170);
+  filter: blur(0.4px);
+  -webkit-filter: blur(0.4px);
+  width: 65px;
+ height: 110px;
+ cursor: pointer;
+}
+
+.linksidiomas{
+    display:none;
+text-decoration: none;
+color: black;
+cursor: pointer;
+}
+
+.opcoesidiomas{
+    
+    margin-top: 5px;
+    margin-left: -27px;
+    block-size: 20px;
+     border-width: 1px;
+     cursor: pointer;
+}
+
+}
+
+
+    @media (min-width: 1100px){
+body{
+ background-color: #befff4;   
+ font-family: 'Scope One', serif;
+}
+
+
+.titulo{   
+    font-size: 30px;
+ position: absolute;
+margin-left: 30%;
+margin-top: 0%;
+}
+
+.subtitulo{
+    position: absolute;
+margin-left: 30%;
+font-size: 18px;
+margin-top: 4%;
+}
+
+.listas{
+
+    position: absolute;
+margin-left: 30%;
+margin-top: 6%;
+
+}
+
+
+.redirecionar{
+    position: absolute;
+text-decoration: blue;
+margin-left: 30.3%;
+margin-top: 8%;
+}
+
+
+.lang{
+    position: absolute;
+    margin-top:  10px;
+  margin-left: 90%;
+  cursor: pointer;
+}
+
+.idiomas{
+  position: absolute;
+  margin-top:  10px;
+  margin-left: 85%;
+  cursor: pointer;
+    
+}
+
+.listaidiomas{
+    display:none;
+    margin-top: 40px;
+    margin-left: 85.5%;
+  list-style-type: none;
+  border: solid rgb(94, 94, 94);
+  filter: blur(0.4px);
+  -webkit-filter: blur(0.4px);
+  width: 65px;
+ height: 110px;
+ cursor: pointer;
+}
+
+.linksidiomas{
+    display:none;
+text-decoration: none;
+color: black;
+cursor: pointer;
+}
+
+.opcoesidiomas{
+    
+    margin-top: 5px;
+    margin-left: -27px;
+    block-size: 20px;
+     border-width: 1px;
+     cursor: pointer;
+}
+
+    }
+
+
+
