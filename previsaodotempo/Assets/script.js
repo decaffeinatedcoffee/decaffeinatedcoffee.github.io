@@ -1,7 +1,12 @@
+var opcoeslocal = {
+  enableHighAccuracy: true,
+  maximumAge: 0,  
+  timeout: 5000
+};
 var latitude;
 var longitude;
 if (window.navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(posicao, erro)
+    navigator.geolocation.getCurrentPosition(posicao, erro, opcoeslocal)
 } 
 
 function erro(motivo){
