@@ -1,0 +1,27 @@
+
+body{
+    font-family: 'Abel', sans-serif;
+    background-color: rgb(245, 237, 227);
+}
+
+.titulo{
+font-size: 70px;
+text-align: center;
+margin-top: 8%;
+}
+.essesguaxininsein{
+    text-align: center;
+font-size: 25px;
+
+}
+
+.link{
+    font-size: 18px;
+    text-align: center;
+    text-decoration-line: none;
+}
+.redirecao{
+    color: rgb(0, 54, 153);
+    cursor: pointer;
+    font-size: 18px;
+}
