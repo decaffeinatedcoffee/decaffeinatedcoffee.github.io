@@ -29,6 +29,9 @@ function turnenglish (){
     document.getElementById("titulo").innerHTML = "Hi, how are you?";
     document.getElementById("subtitulo").innerHTML = "Here are all my pages";
     document.getElementById("redirecionar").innerHTML = "Or you can go back to my GitHub profile";
+    document.getElementById("cheese").innerHTML = "Cheese";
+    document.getElementById("tabuada").innerHTML = "Multiplication table";
+    document.getElementById("previsaotempo").innerHTML = "Weather forecast";
     document.getElementById("listaidiomas").style.display = "none";
     document.getElementById("portugues").style.display = "none";
     document.getElementById("english").style.display = "none";
@@ -41,6 +44,9 @@ function turnportugues (){
     document.getElementById("titulo").innerHTML = "Oi, tudo bem?";
     document.getElementById("subtitulo").innerHTML = "Aqui estão todas as minhas páginas";
     document.getElementById("redirecionar").innerHTML = "Ou você pode voltar ao meu perfil";
+    document.getElementById("cheese").innerHTML = "Cheese";
+    document.getElementById("tabuada").innerHTML = "Tabuada";
+    document.getElementById("previsaotempo").innerHTML = "Previsao do tempo";
     document.getElementById("listaidiomas").style.display = "none";
     document.getElementById("portugues").style.display = "none";
     document.getElementById("english").style.display = "none";
@@ -53,6 +59,9 @@ function turndeutsch(){
     document.getElementById("titulo").innerHTML = "Hallo, wie geht es dir?";
     document.getElementById("subtitulo").innerHTML = "hier sind alle meine seiten";
     document.getElementById("redirecionar").innerHTML = "Oder gehen Sie zurück zu meinem Profil auf GitHub";
+    document.getElementById("cheese").innerHTML = "Cheese";
+    document.getElementById("tabuada").innerHTML = "Multiplikationstabelle";
+    document.getElementById("previsaotempo").innerHTML = "Wettervorhersage";
     document.getElementById("listaidiomas").style.display = "none";
     document.getElementById("portugues").style.display = "none";
     document.getElementById("english").style.display = "none";
