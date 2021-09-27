@@ -222,7 +222,7 @@ left: 30px;
 border: 2px;
 border-radius: 15px;
 padding: 10px;
-width: 25%;
+width: 400px;
 outline: none;
 opacity: 0;
 }
@@ -241,18 +241,18 @@ color:white;
 .opcao{
 position: absolute;
 top: 69.5px;    
-left: 320px;
+left: 300px;
 border: 2px;
 border-radius: 15px;
 padding: 10px;
-width: 5%;
+width: 7%;
 height: 35px;
 outline: none;
 opacity: 0;
 }
 }
 
-@media (min-width: 1700px){
+@media (min-width: 1400px){
 h1 {
     opacity: 0;
     color: white;
@@ -301,7 +301,7 @@ left: 30px;
 border: 2px;
 border-radius: 15px;
 padding: 10px;
-width: 25%;
+width: 450px;
 outline: none;
 opacity: 0;
 }
