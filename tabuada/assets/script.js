@@ -26,6 +26,7 @@ document.getElementById("english").style.display = "none";
 function turnenglish (){
 
     idioma = "1";
+    document.title = "Multiplication table calculator";
     document.getElementById("titulo").innerHTML = "Welcome to multiplication table calculator";
     document.getElementById("subtitulo").innerHTML = "Enter the number and click get result";
     document.getElementById("campotexto").placeholder = "type here";
@@ -38,6 +39,7 @@ function turnenglish (){
 
 function turnportugues (){
     idioma = "0";
+    document.title = "Calculadora de tabuada";
     document.getElementById("titulo").innerHTML = "Bem vindo a calculadora de tabuada";
     document.getElementById("subtitulo").innerHTML = "Digite o numero e clique em obter";
     document.getElementById("campotexto").placeholder = "digite aqui";
