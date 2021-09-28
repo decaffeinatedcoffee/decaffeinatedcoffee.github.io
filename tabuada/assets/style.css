@@ -1,0 +1,379 @@
+body{
+background-color: rgba(0, 0, 0,0.9);
+
+}
+@media screen and (max-width: 770px){ 
+    
+    
+.titulo{
+font-size: 20px;
+position: absolute;
+margin-left: 0%;
+color: rgb(0, 79, 224);
+}
+
+
+.subtitulo{
+font-size: 15px;
+position: absolute;
+margin-left: 0%;
+margin-top: 15%;
+color: rgb(0, 79, 224);
+}
+
+
+.campotexto{
+margin-left: 18%;
+margin-top: 37%;
+border-radius: 25px;
+outline: none;
+box-shadow: none;
+padding:  1px;
+border: none;
+height: 30px;
+width: 200px;
+position: absolute;
+}
+
+.obtervalor{
+position: absolute;
+background-color: rgb(73, 73, 255);
+border-top-right-radius: 25px;
+border-bottom-right-radius: 25px;
+outline: none;
+box-shadow: none;
+padding:  1px;
+border: none;
+height: 32px;
+width: 90px;
+margin-left: 53.3%;
+margin-top: 37%;
+}
+
+.resultado{
+position: relative;
+color: rgb(255, 255, 255);
+margin-left: 35%;
+
+
+}
+
+.result{
+position: absolute;
+margin-top: 48%;
+margin-left: 25%;
+}
+
+
+.mais{
+ margin-left: 23%;
+ display: none;
+background-color: rgb(73, 73, 255);
+border-radius: 25px;
+border-radius: 25px;
+outline: none;
+box-shadow: none;
+padding:  1px;
+border: none;
+height: 40px;
+width: 110px;
+}
+
+.lang{
+    position: absolute;
+  margin-left: 0%;
+  margin-top: 70%;
+  cursor: pointer;
+  color: white;
+}
+
+.idiomas{
+  position: absolute;
+  margin-top: 70%;
+  margin-left: 8%;
+  cursor: pointer;
+    color: white;
+}
+
+.listaidiomas{
+    position: absolute;
+    display:none;
+    margin-top: 80%;
+    margin-left: 0.5%;
+  list-style-type: none;
+  border: solid rgb(170, 170, 170);
+  filter: blur(0.4px);
+  -webkit-filter: blur(0.4px);
+  width: 65px;
+ height: 110px;
+ cursor: pointer;
+ color: white;
+}
+
+.linksidiomas{
+    display:none;
+text-decoration: none;
+color: rgb(255, 254, 254);
+cursor: pointer;
+}
+
+.opcoesidiomas{
+    
+    margin-top: 5px;
+    margin-left: -27px;
+    block-size: 20px;
+     border-width: 1px;
+     cursor: pointer;
+}
+
+} 
+
+
+
+
+
+
+@media screen and (min-width: 600px){ 
+    
+    
+    .titulo{
+position: absolute;
+margin-left: 20%;
+color: rgb(0, 79, 224);
+}
+
+
+.subtitulo{
+position: absolute;
+margin-left: 20.5%;
+margin-top: 11%;
+color: rgb(0, 79, 224);
+}
+
+
+.campotexto{
+    margin-left: 35%;
+margin-top: 17%;
+border-radius: 25px;
+outline: none;
+box-shadow: none;
+padding:  1px;
+border: none;
+height: 30px;
+width: 200px;
+position: absolute;
+}
+
+.obtervalor{
+position: absolute;
+background-color: rgb(73, 73, 255);
+border-top-right-radius: 25px;
+border-bottom-right-radius: 25px;
+outline: none;
+box-shadow: none;
+padding:  1px;
+border: none;
+height: 32px;
+width: 90px;
+margin-left: 50%;
+margin-top: 17%;
+}
+
+.resultado{
+position: relative;
+color: rgb(255, 255, 255);
+margin-left: 38%;
+
+
+}
+
+.result{
+position: absolute;
+margin-top: 22%;
+margin-left: 38%;
+}
+
+.mais{
+ margin-left: 38%;
+display: none;
+background-color: rgb(73, 73, 255);
+border-radius: 25px;
+border-radius: 25px;
+outline: none;
+box-shadow: none;
+padding:  1px;
+border: none;
+height: 40px;
+width: 110px;
+}
+
+.lang{
+    position: absolute;
+    margin-top:  5px;
+  margin-left: 5%;
+  cursor: pointer;
+  color: white;
+}
+
+.idiomas{
+    position: absolute;
+  margin-top:  5px;
+  margin-left: 8%;
+  cursor: pointer;
+ color: white;   
+}
+
+.listaidiomas{
+    position: absolute;
+    display:none;
+    margin-top: 42px;
+    margin-left: 4.5%;
+  list-style-type: none;
+  border: solid rgb(255, 255, 255);
+  filter: blur(0.4px);
+  -webkit-filter: blur(0.4px);
+  width: 65px;
+ height: 110px;
+ cursor: pointer;
+}
+
+.linksidiomas{
+    display:none;
+text-decoration: none;
+color: rgb(255, 255, 255);
+cursor: pointer;
+}
+
+.opcoesidiomas{
+    
+    margin-top: 5px;
+    margin-left: -27px;
+    block-size: 20px;
+     border-width: 1px;
+     cursor: pointer;
+}
+
+}
+
+
+
+
+@media (min-width: 1100px){
+.titulo{
+position: absolute;
+margin-left: 30%;
+color: rgb(0, 79, 224);
+}
+
+
+.subtitulo{
+position: absolute;
+margin-left: 30%;
+margin-top: 7%;
+color: rgb(0, 79, 224);
+font-size: 20px;
+}
+
+
+.campotexto{
+    margin-left: 38%;
+margin-top: 13%;
+border-radius: 25px;
+outline: none;
+box-shadow: none;
+padding:  1px;
+border: none;
+height: 30px;
+width: 200px;
+position: absolute;
+}
+
+.obtervalor{
+position: absolute;
+background-color: rgb(73, 73, 255);
+border-top-right-radius: 25px;
+border-bottom-right-radius: 25px;
+outline: none;
+box-shadow: none;
+padding:  1px;
+border: none;
+height: 32px;
+width: 90px;
+margin-left: 47%;
+margin-top: 13%;
+}
+
+
+.resultado{
+color: rgb(255, 255, 255);
+}
+
+.result{
+position: absolute;
+margin-top: 18%;
+margin-left: 38%;
+}
+.mais{
+ margin-left: 38%;
+display: none;
+background-color: rgb(73, 73, 255);
+border-radius: 25px;
+border-radius: 25px;
+outline: none;
+box-shadow: none;
+padding:  1px;
+border: none;
+height: 40px;
+width: 110px;
+}
+
+.lang{
+    position: absolute;
+    margin-top:  20px;
+  margin-left: 90%;
+  cursor: pointer;
+  color: white;
+}
+
+.idiomas{
+  position: absolute;
+  margin-top:  20px;
+  margin-left: 85%;
+  cursor: pointer;
+  color: white;
+    
+}
+
+.listaidiomas{
+    position: absolute;
+    display:none;
+    margin-top: 62px;
+    margin-left: 84.5%;
+  list-style-type: none;
+  border: solid rgb(170, 170, 170);
+  filter: blur(0.4px);
+  -webkit-filter: blur(0.4px);
+  width: 65px;
+ height: 110px;
+ cursor: pointer;
+}
+
+.linksidiomas{
+    display:none;
+text-decoration: none;
+color: rgb(255, 255, 255);
+cursor: pointer;
+}
+
+.opcoesidiomas{
+    
+    margin-top: 5px;
+    margin-left: -27px;
+    block-size: 20px;
+     border-width: 1px;
+     cursor: pointer;
+}
+
+}
+
+
