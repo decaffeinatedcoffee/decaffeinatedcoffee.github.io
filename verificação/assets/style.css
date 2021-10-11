@@ -23,7 +23,7 @@ background-color: rgba(0, 0, 0, 0.9);
     }
     
     #entrada{
-        margin-top: 1%;
+        margin-top: 4%;
         margin-left: 24%;
         height: 20px;
         -webkit-user-select: none;
@@ -66,6 +66,8 @@ background-color: rgba(0, 0, 0, 0.9);
         color: white;
         text-align: center;
         caret-color: transparent;
+         margin-top: 15%;
+        height: 1px;
     }
     }
 
@@ -85,7 +87,7 @@ background-color: rgba(0, 0, 0, 0.9);
     }
     
     #entrada{
-        margin-top: 1%;
+        margin-top: 4%;
         margin-left: 24%;
         height: 20px;
         -webkit-user-select: none;
@@ -128,6 +130,8 @@ background-color: rgba(0, 0, 0, 0.9);
         color: white;
         text-align: center;
         caret-color: transparent;
+         margin-top: 15%;
+        height: 1px;
     }
     }
 
@@ -147,7 +151,7 @@ margin-top: 10%;
 }
 
 #entrada{
-     margin-top: 1%;
+     margin-top: 4%;
     margin-left: 24%;
     height: 20px;
     -webkit-user-select: none;
@@ -191,6 +195,8 @@ margin-top: 10%;
     color: white;
     text-align: center;
     caret-color: transparent;
+     margin-top: 15%;
+        height: 1px;
 }
 }
 
