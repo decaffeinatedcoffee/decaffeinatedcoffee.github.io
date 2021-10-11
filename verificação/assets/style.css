@@ -18,6 +18,8 @@ background-color: rgba(0, 0, 0, 0.9);
      -ms-user-select: none;
      user-select: none;
      caret-color: transparent;
+        font-family: 'Vibes', cursive;
+     height: 25px;
     }
     
     #entrada{
@@ -30,8 +32,6 @@ background-color: rgba(0, 0, 0, 0.9);
      user-select: none;
      outline: none;
      font-family: 'Open Sans', sans-serif;
-     font-family: 'Vibes', cursive;
-     height: 25px;
     }
     
     #botao{
