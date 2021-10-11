@@ -1,4 +1,4 @@
-
+console.log("Hii, if you came here to try to break the verify to show me that this is not safe, i know that, (thank you anyway!) but it's a page for fun, if you still want to venture around the console, feel free ( :");
 var escolha = Math.floor(Math.random() * 7);
 
 const estilos = [
