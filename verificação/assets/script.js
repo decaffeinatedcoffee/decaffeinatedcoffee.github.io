@@ -43,7 +43,7 @@ if(valorentrada == ""){
 
 else if(valorentrada.toUpperCase() == valorgerado){
 document.getElementById("mensagem").style.color = "green";
-document.getElementById('mensagem').innerHTML = "Você passou no captcha!"
+document.getElementById('mensagem').innerHTML = "Você passou na verificação!"
 setTimeout(redirect, 1000)
 function redirect() {
     location.replace("https://decaffeinatedcoffee.github.io/");
