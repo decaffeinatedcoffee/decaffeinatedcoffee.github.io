@@ -1,5 +1,5 @@
 
-console.log("Hii, if you came here to try to break the check to show me that this is not safe, i already know that, (thank you anyway!) but it's just a page for fun, if you still want to venture around the console, feel free ( :");
+console.log("Hii, if you came here to try to break the verify to show me that this is not safe, i know that, (thank you anyway!) but it's a page for fun, if you still want to venture around the console, feel free ( :");
 var valorgerado = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 5).toUpperCase();
 document.getElementById('mostrador').innerHTML = valorgerado;
 
