@@ -54,6 +54,29 @@ function redirect() {
 else{
  document.getElementById("mensagem").style.color = "red";
 document.getElementById('mensagem').innerHTML = "Eita, tenta de novo"
+ escolha = Math.floor(Math.random() * 7);
+
+if(escolha <= 4){
+document.getElementById('mostrador').style.textDecoration = estilos[escolha];
+}
+else if(escolha == 5){
+var texto = document.getElementById("mostrador");
+texto.style.textShadow = "1px 31px 0 red";
+texto.style.mozTextShadow = "1px 31px 0 red";
+texto.style.webkitTextShadow = "1px 31px 0 red";
+}
+else if(escolha == 6){
+document.getElementById("mostrador").style.filter = "blur(1px)";
+
+}
+else if(escolha == 7){
+    document.getElementById("mostrador").style.filter = "blur(2px)";
+    
+    }
+    else{
+        document.getElementById("mostrador").style.filter = "blur(3px)";
+    }
+
 valorgerado = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 5).toUpperCase();
 document.getElementById('mostrador').innerHTML = valorgerado; 
 
