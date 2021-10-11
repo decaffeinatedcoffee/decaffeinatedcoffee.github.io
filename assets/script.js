@@ -47,7 +47,7 @@ function turnportugues (){
     document.getElementById("redirecionar").innerHTML = "Ou você pode voltar ao meu perfil";
     document.getElementById("cheese").innerHTML = "Cheese";
     document.getElementById("tabuada").innerHTML = "Tabuada";
-    document.getElementById("previsaotempo").innerHTML = "Previsao do tempo";
+    document.getElementById("previsaotempo").innerHTML = "Previsão do tempo";
     document.getElementById("verify").innerHTML = "Verificação";
     document.getElementById("listaidiomas").style.display = "none";
     document.getElementById("portugues").style.display = "none";
