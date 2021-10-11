@@ -54,7 +54,7 @@ function redirect() {
 else{
  document.getElementById("mensagem").style.color = "red";
 document.getElementById('mensagem').innerHTML = "Eita, tenta de novo"
- escolha = Math.floor(Math.random() * 7);
+ var escolha = Math.floor(Math.random() * 7);
 
 if(escolha <= 4){
 document.getElementById('mostrador').style.textDecoration = estilos[escolha];
