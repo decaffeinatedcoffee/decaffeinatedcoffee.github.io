@@ -1,5 +1,34 @@
 
-console.log("Hii, if you came here to try to break the verify to show me that this is not safe, i know that, (thank you anyway!) but it's a page for fun, if you still want to venture around the console, feel free ( :");
+var escolha = Math.floor(Math.random() * 7);
+
+const estilos = [
+'line-through',
+'none',
+'underline',
+'overline'
+
+]
+if(escolha <= 4){
+document.getElementById('mostrador').style.textDecoration = estilos[escolha];
+}
+else if(escolha == 5){
+var texto = document.getElementById("mostrador");
+texto.style.textShadow = "1px 31px 0 red";
+texto.style.mozTextShadow = "1px 31px 0 red";
+texto.style.webkitTextShadow = "1px 31px 0 red";
+}
+else if(escolha == 6){
+document.getElementById("mostrador").style.filter = "blur(1px)";
+
+}
+else if(escolha == 7){
+    document.getElementById("mostrador").style.filter = "blur(2px)";
+    
+    }
+    else{
+        document.getElementById("mostrador").style.filter = "blur(3px)";
+    }
+
 var valorgerado = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 5).toUpperCase();
 document.getElementById('mostrador').innerHTML = valorgerado;
 
@@ -14,7 +43,7 @@ if(valorentrada == ""){
 
 else if(valorentrada.toUpperCase() == valorgerado){
 document.getElementById("mensagem").style.color = "green";
-document.getElementById('mensagem').innerHTML = "Você passou na verificação!"
+document.getElementById('mensagem').innerHTML = "Você passou no captcha!"
 setTimeout(redirect, 1000)
 function redirect() {
     location.replace("https://decaffeinatedcoffee.github.io/");
