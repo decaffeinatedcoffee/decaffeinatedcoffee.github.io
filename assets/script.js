@@ -32,6 +32,7 @@ function turnenglish (){
     document.getElementById("cheese").innerHTML = "Cheese";
     document.getElementById("tabuada").innerHTML = "Multiplication table";
     document.getElementById("previsaotempo").innerHTML = "Weather forecast";
+    document.getElementById("verify").innerHTML = "Verify";
     document.getElementById("listaidiomas").style.display = "none";
     document.getElementById("portugues").style.display = "none";
     document.getElementById("english").style.display = "none";
@@ -47,6 +48,7 @@ function turnportugues (){
     document.getElementById("cheese").innerHTML = "Cheese";
     document.getElementById("tabuada").innerHTML = "Tabuada";
     document.getElementById("previsaotempo").innerHTML = "Previsao do tempo";
+    document.getElementById("verify").innerHTML = "Verificação";
     document.getElementById("listaidiomas").style.display = "none";
     document.getElementById("portugues").style.display = "none";
     document.getElementById("english").style.display = "none";
@@ -62,6 +64,7 @@ function turndeutsch(){
     document.getElementById("cheese").innerHTML = "Cheese";
     document.getElementById("tabuada").innerHTML = "Multiplikationstabelle";
     document.getElementById("previsaotempo").innerHTML = "Wettervorhersage";
+    document.getElementById("verify").innerHTML = "Prüfen";
     document.getElementById("listaidiomas").style.display = "none";
     document.getElementById("portugues").style.display = "none";
     document.getElementById("english").style.display = "none";
