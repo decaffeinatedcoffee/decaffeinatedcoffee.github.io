@@ -4,6 +4,10 @@ if(document.getElementById('CEPentrada').value == ""){
   document.getElementById("feedback").innerHTML = "Nenhum valor inserido!"    
 }
 
+else if(isNaN(document.getElementById('CEPentrada').value.replace(/-/,""))){
+  document.getElementById("feedback").innerHTML = "Deve conter apenas numeros!"    
+}
+
 else if(document.getElementById('CEPentrada').value.replace(/-/,"").length > 8){
     document.getElementById("feedback").innerHTML = "CEP inválido inserido!" 
 
@@ -18,13 +22,22 @@ fetch("https://viacep.com.br/ws/"+ CEP +"/json/")
   .then(function (myJson) {
   console.log(myJson)
   var ddd = myJson.ddd;
+  if(myJson.erro == true){
+    document.getElementById("tituloresult").style.display = "none";
+    document.getElementById("pre").style.display = "none";
+  document.getElementById("pos").style.display = "block";
+    document.getElementById("placecidade").innerHTML = "Eita, acho que esse CEP tá errado, você pode tentar novamente?";
+  }
+else{
   document.getElementById("feedback").style.innerHTML = "";
   document.getElementById("pre").style.display = "none";
+  document.getElementById("tituloresult").style.display = "block";
   document.getElementById("pos").style.display = "block";
   document.getElementById("placecidade").innerHTML = myJson.localidade + " (DDD " + ddd + ")";
   document.getElementById("placebairro").innerHTML = myJson.bairro;
   document.getElementById("placelogradouro").innerHTML = myJson.logradouro;
   document.getElementById("placeestado").innerHTML = myJson.uf;
+}
   });
 }
 }
