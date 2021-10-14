@@ -20,7 +20,6 @@ fetch("https://viacep.com.br/ws/"+ CEP +"/json/")
     return response.json();
   })
   .then(function (myJson) {
-  console.log(myJson)
   var ddd = myJson.ddd;
   if(myJson.erro == true){
     document.getElementById("tituloresult").style.display = "none";
