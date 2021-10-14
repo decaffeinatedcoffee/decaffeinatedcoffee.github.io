@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style2.css">
+    <meta property="og:url"                content="https://decaffeinatedcoffee.github.io/consultacep" />
+    <meta property="og:title"              content="Consulta CEP" />
+    <meta property="og:description"        content="Consulta CEP by decaffeinatedcoffee" />
+    <meta property="og:image"              content="https://avatars.githubusercontent.com/u/77131841?s=400&u=2679706fce330542437e9e196201e89be8c8ba07&v=4" />
+    <title>Consulta CEP</title>
+</head>
+
+
+<body>
+
+     <div class="pre" id="pre">
+    <p class="titulo">Busca de Logradouro</p>
+    <p class="feedback" id="feedback"></p>
+
+   <input type="text" id="logradouro" placeholder="Digite o logradouro" class="logradouro">
+    <input type="text" id="cidade" placeholder="Digite a Cidade" class="cidade">
+    <select id="uf" name="UF" class="uf">
+        <option value="vazio">Selecione o Estado</option>
+        <option value="AC">Acre</option>
+        <option value="AL">Alagoas</option>
+        <option value="AP">Amapá</option>
+        <option value="AM">Amazonas</option>
+        <option value="BA">Bahia</option>
+        <option value="CE">Ceará</option>
+        <option value="DF">Distrito Federal</option>
+        <option value="ES">Espírito Santo</option>
+        <option value="GO">Goiás</option>
+        <option value="MA">Maranhão</option>
+        <option value="MT">Mato Grosso</option>
+        <option value="MS">Mato Grosso do Sul</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="PA">Pará</option>
+        <option value="PB">Paraíba</option>
+        <option value="PR">Paraná</option>
+        <option value="PE">Pernambuco</option>
+        <option value="PI">Piauí</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="RN">Rio Grande do Norte</option>
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="RO">Rondônia</option>
+        <option value="RR">Roraima</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="SP">São Paulo</option>
+        <option value="SE">Sergipe</option>
+        <option value="TO">Tocantins</option>
+      
+    </select>
+  <button onclick="obter()" class="botao">Checar</button>
+  <a href="index.html" class="redirect">Busca por CEP</a>
+    </div>
+
+    
+
+    <p class="creditos" id="creditos">Dados fornecidos por <a href="https://viacep.com.br/" class="link">ViaCEP</a> </p>
+
+    <div class="pos" id="pos">
+        <p class="resultadoinfo" id="resultadoinfo"></p>
+        <p class="resultado" id="resultado"></p>
+        <button onclick="repetir()" class="botao2">Consultar Novamente</button>
+         </div>
+</body>
+
+<script src="assets/script2.js"></script>
+</html>
