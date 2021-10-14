@@ -1,0 +1,111 @@
+html {
+background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('background.jpg');
+background-position: center center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+height: 100%; 
+overflow: hidden;
+}
+
+body {           
+height:100%;
+}
+
+.pre{
+    display: block;
+}
+.titulo{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 5%;
+    font-family: 'Open Sans', sans-serif;
+}
+.feedback{
+    color: rgb(255, 0, 0);
+    text-align: center;
+    margin-top: 3%;
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.input{
+    display: block;
+    margin: 0 auto;
+height: 90px;
+border-radius: 20px;
+outline: none;
+border: none;
+
+
+}
+
+.botao{
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+   background-color: rgb(74, 248, 182);
+   border: none;
+   padding: none;
+   height: 50px;
+   width: 100px;
+}
+
+.pos{
+margin-top: 10%;
+font-size: 30px;
+display: none;
+font-family: 'Open Sans', sans-serif;
+}
+.cidade{
+    color: white;
+    text-align: center;
+}
+.bairro{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.logradouro{
+    color: white;
+    text-align: center;
+}
+.estado{
+    color: white;
+    text-align: center;
+}
+.tituloresult{
+    text-align: center;
+    color: white;
+}
+
+.botao2{
+    display: block;
+    margin: 0 auto;
+   background-color: rgb(74, 248, 182);
+   border: none;
+   padding: none;
+   height: 50px;
+   width: 100px;
+}
+.creditos{
+position: absolute;
+color: white;
+right: 50px;
+bottom: 0px;
+font-size: 15px;
+}
+.link{
+color: white;
+}
+.redirect{
+color: white;
+display: block;
+margin: 0 auto;
+border: none;
+padding: none;
+height: 50px;
+width: 70px;
+margin-top: 1.5%;
+}
