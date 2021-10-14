@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <meta property="og:url"                content="https://decaffeinatedcoffee.github.io/consultacep" />
+    <meta property="og:title"              content="Consulta CEP" />
+    <meta property="og:description"        content="Consulta CEP by decaffeinatedcoffee" />
+    <meta property="og:image"              content="https://avatars.githubusercontent.com/u/77131841?s=400&u=2679706fce330542437e9e196201e89be8c8ba07&v=4" />
+    <title>Consulta CEP</title>
+
+</head>
+
+<body>
+<div class="pre" id="pre">
+    <p class="titulo">Busca de Logradouro</p>
+    <p class="feedback" id="feedback"></p>
+<input type="text" id="CEPentrada" oninput="formatar()" class="input" placeholder="Insira o CEP">
+<button onclick="obter()" class="botao">Checar</button>
+<a href="index2.html" class="redirect">Busca por logradouro</a>
+
+</div>
+
+<div class="pos" id="pos"> 
+    
+    <p class="tituloresult">Informações Obtidas</p>
+    <p id="placelogradouro" class="logradouro">Rua HMM</p>
+<p id="placebairro" class="bairro">HMMMA</p>
+<p id="placecidade" class="cidade">HMMMLANDIA</p>
+<p id="placeestado" class="estado">HM</p> 
+<button onclick="repetir()" class="botao2">Consultar outro CEP</button>
+
+
+</div>
+
+<p class="creditos" id="creditos">Dados fornecidos por <a href="https://viacep.com.br/" class="link">ViaCEP</a> </p>
+</body>
+
+<script src="assets/script.js"></script>
+</html>
