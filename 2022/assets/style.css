@@ -23,17 +23,16 @@ body{
 .video{
     display: none;
 }
-@media screen and (min-device-width: 481px){ 
 
 .videofile{
-  width: 100vw;
-  height: 100vh;
+  max-width: 120vw;
+  max-height: 120vh;
   object-fit: cover;
   position: fixed;
   top: 0;
   left: 0;
 }
-}
+
 .button{
     display: none;
     margin: 0 auto;
