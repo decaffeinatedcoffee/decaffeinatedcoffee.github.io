@@ -1,0 +1,59 @@
+ 
+html {
+background-image:url('background.png');
+background-position: center center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+height: 100%; 
+overflow: hidden;
+}
+
+body {           
+height:100%;
+}
+
+.title{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-align: center;
+    margin-top: 5%;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.resposta{
+    color: rgb(255, 255, 255);
+    font-size: 34px;
+    text-align: center;
+    margin-top: 2%;
+    font-family: 'Open Sans', sans-serif;
+}
+.gift{
+    color: rgb(255, 255, 255);
+    font-size: 34px;
+    text-align: center;
+    margin-top: 2%;
+    font-family: 'Open Sans', sans-serif;
+    display: none;
+    
+}
+.giftlink{
+    cursor: pointer;
+    text-decoration: none;
+}
+.timeremain{
+    color: #ff1515;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 2.5%;
+    font-family: 'Open Sans', sans-serif;
+}
+.logo{
+    display: block;
+    block-size: 35px;
+    position: absolute;
+    right: 50px;
+    bottom: 40px;
+}
