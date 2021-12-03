@@ -31,6 +31,7 @@ function turnenglish (){
     document.getElementById("redirecionar").innerHTML = "Or you can go back to my GitHub profile";
     document.getElementById("cheese").innerHTML = "Cheese";
     document.getElementById("tabuada").innerHTML = "Multiplication table";
+    document.getElementById("christmas").innerHTML = "Christmas Countdown";
     document.getElementById("previsaotempo").innerHTML = "Weather forecast";
     document.getElementById("verify").innerHTML = "Verify";
     document.getElementById("CEP").innerHTML = "CEP (Only in Brazil)";
@@ -48,6 +49,7 @@ function turnportugues (){
     document.getElementById("redirecionar").innerHTML = "Ou você pode voltar ao meu perfil";
     document.getElementById("cheese").innerHTML = "Cheese";
     document.getElementById("tabuada").innerHTML = "Tabuada";
+    document.getElementById("christmas").innerHTML = "Contagem regressiva pro natal";
     document.getElementById("previsaotempo").innerHTML = "Previsão do tempo";
     document.getElementById("verify").innerHTML = "Verificação";
     document.getElementById("CEP").innerHTML = "Consulta CEP";
@@ -65,6 +67,7 @@ function turndeutsch(){
     document.getElementById("redirecionar").innerHTML = "Oder gehen Sie zurück zu meinem Profil auf GitHub";
     document.getElementById("cheese").innerHTML = "Cheese";
     document.getElementById("tabuada").innerHTML = "Multiplikationstabelle";
+    document.getElementById("christmas").innerHTML = "Weihnachts Countdown";
     document.getElementById("previsaotempo").innerHTML = "Wettervorhersage";
     document.getElementById("verify").innerHTML = "Prüfen";
     document.getElementById("CEP").innerHTML = "CEP (nur in Brasilien)";
