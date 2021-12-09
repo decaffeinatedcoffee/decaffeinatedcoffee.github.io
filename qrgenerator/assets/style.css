@@ -1,0 +1,61 @@
+
+html {
+background-image:url('background.png');
+background-position: center center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+height: 100%; 
+overflow: hidden;
+}
+
+body {           
+height:100%;
+}
+
+#entrada{
+    display: block;
+    margin: 0 auto;
+    margin-top: 15%;
+    min-width: 300px;
+    max-width: 400px;
+    height: 60px;
+    border-radius: 25px;
+    outline: none;
+    border: 1px solid rgb(106, 220, 255);
+    font-family: 'Montserrat', sans-serif;
+    caret-color: rgb(90, 147, 223);
+}
+
+#botao{
+    display: none;
+    margin: 0 auto;
+    height: 40px;
+    margin-top: 2%;
+    border-radius: 25px;
+    border: 1px solid rgb(106, 220, 255);
+    background-color: rgb(61, 165, 250);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+#codigo{
+    margin-top: 2%;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+#logo{
+    block-size: 35px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.githublogo{
+    display: block;
+    block-size: 35px;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+}
