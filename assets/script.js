@@ -35,6 +35,7 @@ function turnenglish (){
     document.getElementById("previsaotempo").innerHTML = "Weather forecast";
     document.getElementById("verify").innerHTML = "Verify";
     document.getElementById("CEP").innerHTML = "CEP (Only in Brazil)";
+    document.getElementById("qrcode").innerHTML = "QR Code generator";
     document.getElementById("listaidiomas").style.display = "none";
     document.getElementById("portugues").style.display = "none";
     document.getElementById("english").style.display = "none";
@@ -53,6 +54,7 @@ function turnportugues (){
     document.getElementById("previsaotempo").innerHTML = "Previsão do tempo";
     document.getElementById("verify").innerHTML = "Verificação";
     document.getElementById("CEP").innerHTML = "Consulta CEP";
+    document.getElementById("qrcode").innerHTML = "Gerador de QR Code";
     document.getElementById("listaidiomas").style.display = "none";
     document.getElementById("portugues").style.display = "none";
     document.getElementById("english").style.display = "none";
@@ -71,6 +73,7 @@ function turndeutsch(){
     document.getElementById("previsaotempo").innerHTML = "Wettervorhersage";
     document.getElementById("verify").innerHTML = "Prüfen";
     document.getElementById("CEP").innerHTML = "CEP (nur in Brasilien)";
+    document.getElementById("qrcode").innerHTML = "QR Code generator";
     document.getElementById("listaidiomas").style.display = "none";
     document.getElementById("portugues").style.display = "none";
     document.getElementById("english").style.display = "none";
