@@ -33,7 +33,7 @@ let data = new Date();
 data.toLocaleString('en-US', { timeZone: timezone });
 var horaatual = data.getHours();
 var atual = new Date().getTime();
-var end = new Date('Dec 28, 2021 00:00:00').getTime();
+var end = new Date('Dec 25, 2021 00:00:00').getTime();
 var restante = end - atual;
 var dias = Math.floor(restante / (1000 * 60 * 60 * 24));
 var horas = Math.floor((restante % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
