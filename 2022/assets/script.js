@@ -54,5 +54,5 @@ function countdownshow() {
     setTimeout(endshow,1000)
 }
 function endshow() {
-    document.getElementById("status").innerHTML = "The show are now available"
+    document.getElementById("status").innerHTML = "The show is now available"
 }
