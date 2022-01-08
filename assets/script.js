@@ -27,7 +27,7 @@ var analyticsData = {country : ipdata.country, region: ipdata.region, city: ipda
 var jsonData = JSON.stringify(analyticsData); 
  submitData(jsonData)
   })
-
+})
 
 
 function submitData(analyticsData){
