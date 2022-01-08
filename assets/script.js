@@ -1,4 +1,36 @@
 
+
+
+///////////////////////////////This is for analytics function/////////////////////////////////////
+////////////////////////////////No panic, all the infos collected are > City, Region, Country and navigator user agent for device type info///////////////
+/////////////////////////////////I'm not saving your IP, or Geographic coordinates///////////////////////////////////// 
+fetch("https://ipinfo.io/json")
+  .then(function (ipinfo) {
+    return ipinfo.json();
+  })
+  .then(function (ipdata) {
+
+var analyticsData = {country : ipdata.country, region: ipdata.region, city: ipdata.city, deviceType: navigator.userAgent}; ////////////////////// << here you can see all collected data
+var jsonData = JSON.stringify(analyticsData); 
+ submitData(jsonData)
+  })
+
+
+
+function submitData(analyticsData){
+
+const xhttp = new XMLHttpRequest();
+    xhttp.open("POST", "https://analyticsinfo.herokuapp.com/", true);
+    xhttp.setRequestHeader("Content-Type", "application/json");
+    xhttp.onreadystatechange = 
+    function() {
+            console.log(xhttp.statusText);
+      }
+    xhttp.send(analyticsData);
+}
+
+///////////////////////////////////////////////END////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
 document.getElementById("listaidiomas").style.display = "none";
 document.getElementById("portugues").style.display = "none";
 document.getElementById("english").style.display = "none";
