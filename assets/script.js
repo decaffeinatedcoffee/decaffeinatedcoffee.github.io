@@ -31,10 +31,6 @@ function submitData(analyticsData){
 const xhttp = new XMLHttpRequest();
     xhttp.open("POST", "https://analyticsinfo.herokuapp.com/", true);
     xhttp.setRequestHeader("Content-Type", "application/json");
-    xhttp.onreadystatechange = 
-    function() {
-            console.log(xhttp.statusText);
-      }
     xhttp.send(analyticsData);
 }
 
