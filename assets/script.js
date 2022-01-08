@@ -2,7 +2,7 @@
 
 
 ///////////////////////////////This is for analytics function/////////////////////////////////////
-////////////////////////////////No panic, all the infos collected are > City, Region, Country, Time and navigator user agent for device type info///////////////
+////////////////////////////////No panic, all the infos collected are > City, Region, Country, VPN, Time and navigator user agent for device type info///////////////
 /////////////////////////////////I'm not saving your IP, or Geographic coordinates///////////////////////////////////// 
  let d = new Date();
  d.toLocaleString('en-US', { timeZone: "America/Sao_Paulo" });
@@ -18,8 +18,12 @@ fetch("https://ipinfo.io/json")
     return ipinfo.json();
   })
   .then(function (ipdata) {
-
-var analyticsData = {country : ipdata.country, region: ipdata.region, city: ipdata.city, deviceType: navigator.userAgent, time: time}; ////////////////////// << here you can see all collected data
+fetch("http://ip-api.com/json/?fields=proxy")
+  .then(function (proxy) {
+    return proxy.json();
+  })
+  .then(function (isproxy) {
+var analyticsData = {country : ipdata.country, region: ipdata.region, city: ipdata.city, proxy: isproxy.proxy, deviceType: navigator.userAgent, time: time}; ////////////////////// << here you can see all collected data
 var jsonData = JSON.stringify(analyticsData); 
  submitData(jsonData)
   })
