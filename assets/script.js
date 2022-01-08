@@ -18,16 +18,11 @@ fetch("https://ipinfo.io/json")
     return ipinfo.json();
   })
   .then(function (ipdata) {
-fetch("http://ip-api.com/json/?fields=proxy")
-  .then(function (proxy) {
-    return proxy.json();
-  })
-  .then(function (isproxy) {
-var analyticsData = {country : ipdata.country, region: ipdata.region, city: ipdata.city, proxy: isproxy.proxy, deviceType: navigator.userAgent, time: time}; ////////////////////// << here you can see all collected data
+var analyticsData = {country : ipdata.country, region: ipdata.region, city: ipdata.city, deviceType: navigator.userAgent, time: time}; ////////////////////// << here you can see all collected data
 var jsonData = JSON.stringify(analyticsData); 
  submitData(jsonData)
   })
-})
+
 
 
 function submitData(analyticsData){
