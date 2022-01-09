@@ -2,7 +2,7 @@
 
 
 ///////////////////////////////This is for analytics function/////////////////////////////////////
-////////////////////////////////No panic, all the infos collected are > City, Region, Country, VPN, Time and navigator user agent for device type info///////////////
+////////////////////////////////No panic, all the infos collected are > City, Region, Country, Time and navigator user agent for device type info///////////////
 /////////////////////////////////I'm not saving your IP, or Geographic coordinates///////////////////////////////////// 
  let d = new Date();
  d.toLocaleString('en-US', { timeZone: "America/Sao_Paulo" });
