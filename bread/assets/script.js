@@ -11,7 +11,7 @@
     breadtwo.play();
     counter = 0;
     timer = 6;
-     timerset();
+     setTimeout(timerset, 500);
   }
   }
   
