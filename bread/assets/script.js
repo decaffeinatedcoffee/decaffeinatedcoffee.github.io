@@ -2,7 +2,8 @@
   var breadtwo = new Audio('assets/breadtwo.mp3');
   var counter= 0;
   var timer;
-  function bread() {
+
+  function saybread() {
   if(counter <= 7){
     breadsong.play();
     counter ++;
