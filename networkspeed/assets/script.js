@@ -1,7 +1,8 @@
   var teststart;
     var testend;
-    var testfile = 'https://www.dropbox.com/s/3p5hqodg8p00x06/bigimage.jpg?dl=1';
-      var size = 41943040;
+    var testfile = 'https://www.dropbox.com/s/zcc5vlbmc7ro113/image.gif?dl=1';
+    ///////GIF from https://commons.m.wikimedia.org/wiki/File:%2BVerlobung-Frau-und-Mann----mit--Ringtausch---und-Treue-Verlobungsversprechen---Dresden---Bild-018.gif/////////
+  var size = 40275804;
       var image = new Image()
     
       
