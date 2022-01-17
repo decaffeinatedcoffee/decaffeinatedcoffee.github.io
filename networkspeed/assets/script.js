@@ -2,7 +2,7 @@
     var testend;
     var testfile = 'https://www.dropbox.com/s/9gvr0fuj7r33caf/neowise.gif?dl=1';
     ///////GIF from https://commons.m.wikimedia.org/wiki/File:2020-08-06-2143_C2020-F3-Neowise.gif/////////
-  var size = 26193428;
+  var size = 209547424;
       var image = new Image()
     
       
@@ -31,13 +31,12 @@
 function calcresult() {
   testend = new Date();
   var time = (testend - teststart) / 1000;
-  var dlb = (size * 8)
-  var speedb = (dlb / time).toFixed(2)
+  var speedb = (size / time).toFixed(2)
   var speedc = (speedb / 1024).toFixed(2);
   var speed = (speedc / 1024).toFixed(2);
  document.getElementById('during_test_body').style.display = 'none';
   document.getElementById('pos_test_body').style.display = 'block';
-  document.getElementById('speedresult').innerHTML = (speed + (speed / 2)).toFixed(2) + 'Mbps';
+  document.getElementById('speedresult').innerHTML = speed + 'Mbps';
 }
 
 function error(){
