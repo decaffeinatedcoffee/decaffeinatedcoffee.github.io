@@ -33,7 +33,7 @@ function calcresult() {
   var time = (testend - teststart) / 1000;
   var speedb = (size / time).toFixed(2)
   var speedc = (speedb / 1024).toFixed(2);
-  var speed = (speedc / 1024).toFixed(2);
+  var speed = (speedc / 1024).toFixed(2) + (speedc / 2).toFixed(2);
  document.getElementById('during_test_body').style.display = 'none';
   document.getElementById('pos_test_body').style.display = 'block';
   document.getElementById('speedresult').innerHTML = speed + 'Mbps';
