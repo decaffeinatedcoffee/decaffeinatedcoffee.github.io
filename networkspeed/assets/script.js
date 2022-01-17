@@ -41,5 +41,6 @@ function calcresult() {
 }
 
 function error(){
-document.getElementById('errorbody').style.display = block;
+document.getElementById('during_test_body').style.display = 'none';
+document.getElementById('errorbody').style.display = 'block';
 }
