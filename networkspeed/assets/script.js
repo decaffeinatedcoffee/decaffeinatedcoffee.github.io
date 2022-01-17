@@ -1,6 +1,6 @@
   var teststart;
     var testend;
-    var testfile = 'https://www.dropbox.com/s/zcc5vlbmc7ro113/image.gif?dl=1';
+    var testfile = 'https://www.dropbox.com/s/9gvr0fuj7r33caf/neowise.gif?dl=1';
     ///////GIF from https://commons.m.wikimedia.org/wiki/File:2020-08-06-2143_C2020-F3-Neowise.gif/////////
   var size = 26193428;
       var image = new Image()
