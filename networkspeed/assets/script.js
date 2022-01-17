@@ -24,6 +24,9 @@
       image.onload = function () {
       calcresult();
       }
+       image.error = function () {
+      error();
+      }
 }
 function calcresult() {
   testend = new Date();
@@ -32,4 +35,8 @@ function calcresult() {
  document.getElementById('during_test_body').style.display = 'none';
   document.getElementById('pos_test_body').style.display = 'block';
   document.getElementById('speedresult').innerHTML = speed + 'Mbps';
+}
+
+function error(){
+document.getElementById('errorbody').style.display = block;
 }
