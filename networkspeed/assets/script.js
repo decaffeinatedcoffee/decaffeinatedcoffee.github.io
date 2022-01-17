@@ -1,6 +1,6 @@
   var teststart;
     var testend;
-    var testfile = 'https://www.dropbox.com/s/d5fjk0pyi5axqxx/image.tiff?dl=1';
+    var testfile = 'https://www.dropbox.com/s/d5fjk0pyi5axqxx/image.jpg?dl=1';
       var size = 56644075;
       var image = new Image()
     
