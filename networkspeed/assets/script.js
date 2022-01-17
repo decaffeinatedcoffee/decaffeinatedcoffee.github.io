@@ -1,6 +1,6 @@
   var teststart;
     var testend;
-    var testfile = 'https://github.com/decaffeinatedcoffee/decaffeinatedcoffee.github.io/blob/main/networkspeed/assets/2020-08-06-2143_C2020-F3-Neowise.gif?raw=true';
+    var testfile = 'https://www.dropbox.com/s/zcc5vlbmc7ro113/image.gif?dl=1';
     ///////GIF from https://commons.m.wikimedia.org/wiki/File:2020-08-06-2143_C2020-F3-Neowise.gif/////////
   var size = 26193428;
       var image = new Image()
