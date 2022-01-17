@@ -1,7 +1,7 @@
   var teststart;
     var testend;
-    var testfile = 'https://www.dropbox.com/s/d5fjk0pyi5axqxx/image.jpg?dl=1';
-      var size = 56644075;
+    var testfile = 'https://www.dropbox.com/s/q3zu9l178uau3jm/acoolphotoitook.jpg?dl=1';
+      var size = 5819596;
       var image = new Image()
     
       
