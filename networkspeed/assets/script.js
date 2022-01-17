@@ -30,7 +30,8 @@
 function calcresult() {
   testend = new Date();
   var time = (testend - teststart) / 1000;
-  var speedb = ((size * 8) / time).toFixed(2)
+  var dlb = (size * 8)
+  var speedb = (dlb / time).toFixed(2)
   var speedc = (speedb / 1024).toFixed(2);
   var speed = (speedc / 1024).toFixed(2);
  document.getElementById('during_test_body').style.display = 'none';
