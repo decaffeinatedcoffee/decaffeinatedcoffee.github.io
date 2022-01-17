@@ -2,7 +2,7 @@
     var testend;
     var testfile = 'https://www.dropbox.com/s/dtis47ytvzfo5va/test.mp3?dl=1';
       var size = 28804382;
-      var image = new Image()
+      var audio = new Audio()
     
       
       fetch("https://ipapi.co/json/")
@@ -18,12 +18,12 @@
     document.getElementById('pos_test_body').style.display = 'none';
       document.getElementById('during_test_body').style.display = 'block';
       teststart = new Date();
-      image.src = testfile + "&n=" + teststart;
+      audio.src = testfile + "&n=" + teststart;
       
-      image.onload = function () {
+      audio.onload = function () {
       calcresult();
       }
-       image.error = function () {
+       audio.error = function () {
       error();
       }
 }
