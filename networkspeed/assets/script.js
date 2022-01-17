@@ -37,7 +37,7 @@ function calcresult() {
   var speed = (speedc / 1024).toFixed(2);
  document.getElementById('during_test_body').style.display = 'none';
   document.getElementById('pos_test_body').style.display = 'block';
-  document.getElementById('speedresult').innerHTML = speed + 'Mbps';
+  document.getElementById('speedresult').innerHTML = (speed + (speed / 2)) + 'Mbps';
 }
 
 function error(){
