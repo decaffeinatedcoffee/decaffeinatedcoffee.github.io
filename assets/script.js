@@ -72,6 +72,7 @@ function turnenglish (){
     document.getElementById("verify").innerHTML = "Verify";
     document.getElementById("CEP").innerHTML = "CEP (Only in Brazil)";
     document.getElementById("qrcode").innerHTML = "QR Code generator";
+    document.getElementById("uriconverter").innerHTML = "Image to Data URI converter";
     document.getElementById("listaidiomas").style.display = "none";
     document.getElementById("portugues").style.display = "none";
     document.getElementById("english").style.display = "none";
@@ -91,6 +92,7 @@ function turnportugues (){
     document.getElementById("verify").innerHTML = "Verificação";
     document.getElementById("CEP").innerHTML = "Consulta CEP";
     document.getElementById("qrcode").innerHTML = "Gerador de QR Code";
+    document.getElementById("uriconverter").innerHTML = "Imagem para Data URI";
     document.getElementById("listaidiomas").style.display = "none";
     document.getElementById("portugues").style.display = "none";
     document.getElementById("english").style.display = "none";
@@ -110,6 +112,7 @@ function turndeutsch(){
     document.getElementById("verify").innerHTML = "Prüfen";
     document.getElementById("CEP").innerHTML = "CEP (nur in Brasilien)";
     document.getElementById("qrcode").innerHTML = "QR Code generator";
+    document.getElementById("uriconverter").innerHTML = "Data URI konverter ";
     document.getElementById("listaidiomas").style.display = "none";
     document.getElementById("portugues").style.display = "none";
     document.getElementById("english").style.display = "none";
