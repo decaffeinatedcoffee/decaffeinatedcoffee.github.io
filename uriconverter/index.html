@@ -1,0 +1,30 @@
+<!DOCTYPE 
+html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url"                content="https://decaffeinatedcoffee.github.io/uriconverter" />
+    <meta property="og:title"              content="Image converter" />
+    <meta property="og:description"        content="Convert images to Data URI" />
+    <meta property="og:image"              content="https://avatars.githubusercontent.com/u/77131841?s=400&u=2679706fce330542437e9e196201e89be8c8ba07&v=4" />
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖼️</text></svg>">
+</head>
+  <body>
+    <div id="pre_convert">
+    <label for="inputimg" id="new_input"><p id="clickhere">Click here or drag files to start</p></label>
+    <input type="file" id="inputimg" accept="image/jpeg, image/png" oninput="setimage()"/>
+  
+  <button id="convert" onclick="convert()">Convert</button>
+    </div>
+    
+    <div id="pos_convert">
+        <button id="again" onclick="location.reload()">Try again</button>
+        <button id="copy" onclick="checkmobile()">Copy</button>
+      <p id="result"></p>
+    </div>
+  </body>
+  <script src='assets/script.js'>
+  </script>
+</html>
