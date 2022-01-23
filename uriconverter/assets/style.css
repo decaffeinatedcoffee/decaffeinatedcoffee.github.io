@@ -16,8 +16,9 @@
   }
   
   #titlemain{
-    margin-top: 5%;
+    margin-top: 10%;
     color:white;
+    text-align: center;
     font-family: 'Roboto Mono', monospace;
    }
 
@@ -29,7 +30,7 @@
   #convert{
     display: block;
     margin:0 auto;
-    margin-top: 15%;
+    margin-top: 5%;
     width: 100px;
     height: 40px;
     background-color: rosybrown;
