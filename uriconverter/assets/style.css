@@ -1,0 +1,66 @@
+
+  body{
+    background-color: rgba(0,0,0,0.9);
+  }
+  #inputimg{
+ display: none;
+  }
+  #new_input{
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 200px;
+    border: 3px dashed #379476;
+    margin-top: 50%;
+    text-align: center;
+  }
+  #clickhere{
+    margin-top: 20%;
+    color:white;
+    font-family: 'Roboto Mono', monospace;
+  }
+  #convert{
+    display: block;
+    margin:0 auto;
+    margin-top: 15%;
+    width: 100px;
+    height: 40px;
+    background-color: rosybrown;
+    border: none;
+    display:none;
+    font-family: 'Roboto Mono', monospace;
+  }
+  #pos_convert{
+    display: none;
+  }
+  #pos_convert{
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    margin-top: 40%;
+    font-size: 20px;
+    color: white;
+    word-wrap: break-word; 
+   overflow-wrap: break-word; 
+  }
+  
+    #again{
+    display: block;
+    margin:0 auto;
+    margin-top: 15%;
+    width: 100px;
+    height: 40px;
+    background-color: rosybrown;
+    border: none;
+    font-family: 'Roboto Mono', monospace;
+  }
+      #copy{
+    display: block;
+    margin:0 auto;
+    margin-top: 3%;
+    width: 100px;
+    height: 40px;
+    background-color: rosybrown;
+    border: none;
+    font-family: 'Roboto Mono', monospace;
+  }
+  
