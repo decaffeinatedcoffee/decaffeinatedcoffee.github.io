@@ -24,7 +24,7 @@ function convert(){
     const converted = canvas.toDataURL("image/png");
     document.getElementById('pre_convert').style.display = 'none';
   document.getElementById('pos_convert').style.display = 'block';
-  document.getElementById('result').innerHTML = 'Here is your result: <br> <br> ' + converted;
+  document.getElementById('result').innerHTML = converted;
   texttocopy = converted;
   }
   image.src = imageupload
