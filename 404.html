@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,7 +20,7 @@
 
 var idiomauser = navigator.language || navigator.userLanguage; 
 idiomauser = idiomauser.toLowerCase();
-if(idiomauser == pt-br || idiomauser == pt-pt){
+if(idiomauser == "pt-br" || idiomauser == "pt-pt"){
 document.getElementById('textoprincipal').innerHTML = "Caramba! acho que os guaxinins levaram a página embora de novo!";
 document.getElementById('textodois').innerHTML = "Você pode tentar ver se eles não levaram minha <a onclick='redirecionar()' class='redirecao'>página principal</a>"
 }
