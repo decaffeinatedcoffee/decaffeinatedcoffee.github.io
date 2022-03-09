@@ -1,4 +1,6 @@
-html {
+
+    
+    body {           
     background-image:url('background.jpg');
     background-position: center center;
     -webkit-background-size: cover;
@@ -8,13 +10,8 @@ html {
     background-repeat: no-repeat;
     height: 100%; 
     overflow: hidden;
-    }
-    
-    body {           
-    height:100%;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     }
     #bright_effect{
         background:rgba(0,0,0,0.3);
