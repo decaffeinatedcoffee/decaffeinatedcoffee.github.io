@@ -9,6 +9,8 @@ background-image:url('background.jpg');
     background-repeat: no-repeat;
     overflow: hidden;
    height: calc(100vh - 50px);
+  position: absolute;
+ bottom: 0;
 }
 
     body {           
