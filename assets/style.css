@@ -8,13 +8,12 @@ background-image:url('background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
-   height: 100%;
+   height: calc(100vh - 50px);
 }
 
     body {           
     margin: 0;
     padding: 0;
-    height:100%;
     overflow-y: hidden;
     }
     #bright_effect{
