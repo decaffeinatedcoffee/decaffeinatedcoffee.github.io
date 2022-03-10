@@ -28,7 +28,7 @@ submitData(jsonData)
 function submitData(analyticsData){
 
 const xhttp = new XMLHttpRequest();
-   xhttp.open("POST", "https://analyticsinfo.herokuapp.com/", true);
+   xhttp.open("POST", "https://analyticsinfo.herokuapp.com/datapost", true);
    xhttp.setRequestHeader("Content-Type", "application/json");
    xhttp.send(analyticsData);
 }
