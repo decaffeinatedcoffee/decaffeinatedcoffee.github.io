@@ -2,6 +2,7 @@
 ///////////////////////////////This is for analytics function/////////////////////////////////////
 ////////////////////////////////No panic, all the infos collected are > City, Region, Country, Time and navigator user agent for device type info///////////////
 /////////////////////////////////I'm not saving your IP, or Geographic coordinates///////////////////////////////////// 
+submitForm(window.location.pathname);
 function submitForm(redirectpage){
 let timezoneset = new Date().toLocaleString("en-US", {timeZone: "America/Sao_Paulo"});
 let d = new Date(timezoneset);
