@@ -19,6 +19,14 @@ var jsonData = JSON.stringify(analyticsData);
 submitData(jsonData)
  })
 
+function submitData(analyticsData){
+
+const xhttp = new XMLHttpRequest();
+   xhttp.open("POST", "https://analyticsinfo.herokuapp.com/", true);
+   xhttp.setRequestHeader("Content-Type", "application/json");
+   xhttp.send(analyticsData);
+}
+
 function timer(){
 let timezone = Intl.DateTimeFormat().resolvedOptions().timeZone
 let data = new Date();
