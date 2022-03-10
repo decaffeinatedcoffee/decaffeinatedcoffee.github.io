@@ -1,32 +1,5 @@
 timer();
 
-let timezoneset = new Date().toLocaleString("en-US", {timeZone: "America/Sao_Paulo"});
-let d = new Date(timezoneset);
-var year =     d.getFullYear();
-var month =    d.getMonth() + 1;
-var day =      d.getDate();
-var hour =     d.getHours();
-var minutes =  d.getMinutes();
-var seconds  = d.getSeconds();
- let time = day + "/" + month + "/" + year + " " + hour + ":" + minutes + ":" + seconds;
-fetch("https://ipinfo.io/json")
- .then(function (ipinfo) {
-   return ipinfo.json();
- })
- .then(function (ipdata) {
-var analyticsData = {page: "/2022", country: ipdata.country, region: ipdata.region, city: ipdata.city, deviceType: navigator.userAgent, time: time}; ////////////////////// << here you can see all collected data
-var jsonData = JSON.stringify(analyticsData); 
-submitData(jsonData)
- })
-
-function submitData(analyticsData){
-
-const xhttp = new XMLHttpRequest();
-   xhttp.open("POST", "https://analyticsinfo.herokuapp.com/", true);
-   xhttp.setRequestHeader("Content-Type", "application/json");
-   xhttp.send(analyticsData);
-}
-
 function timer(){
 let timezone = Intl.DateTimeFormat().resolvedOptions().timeZone
 let data = new Date();
