@@ -37,10 +37,57 @@
      <p style="text-align: center; font-size: 23px; margin-top: 2%; display: none;" id="best">Your best</p>
      <p id="bestCPM" style="text-align: center;"></p>
      <p id="bestCPS" style="text-align: center;"></p>
-     <p id="starttext" style="text-align: center; margin-top: 20%; opacity: 0.8;">Click anywhere on this tab or press a key to start</p>
-    <div style="display:none;" id="share">
+    <div style="display:none;" id="share" onclick="sharing()">
      <div class="sharethis-inline-share-buttons"></div>    
     </div>
+     <p id="starttext" style="text-align: center; margin-top: 10%; opacity: 0.8;">Click anywhere on this tab or press a key to start</p>
+</body>
+
+<script src="script.js"></script>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=626a227d742b6c001a1bde2a&product=inline-share-buttons" async="async"></script>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐢</text></svg>">
+    <meta property="og:url"                content="https://decaffeinatedcoffee.github.io/clickspeed" />
+    <meta property="og:title"              content="Click Speed Test" />
+    <meta property="og:description"        content="How fast your fingers can click?" />
+    <meta property="og:image"              content="https://avatars.githubusercontent.com/u/77131841?v=4" />
+  <title>Click Speed</title>
+
+</head>
+<style>
+    body{
+        background-color: rgba(0, 0, 0, 0.9);
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none; 
+        -khtml-user-select: none; 
+        -moz-user-select: none;
+        -ms-user-select: none; 
+         user-select: none; 
+    }
+</style>
+<body>
+    <p style="text-align: center; font-size: 19px; margin-top: 10%;" id="mode"></p>
+    <p style="text-align: center; font-size: 23px; margin-top: 1%;" id="main">Test your click speed</p>
+     <hr style="width:0%; display: none; border: 1px solid blue;" id="timebar">
+     <p style="text-align: center;" id="timer"></p>
+     <p id="resultCPM" style="text-align: center;"></p>
+     <p id="resultCPS" style="text-align: center;"></p>
+     <p style="text-align: center; font-size: 23px; margin-top: 2%; display: none;" id="best">Your best</p>
+     <p id="bestCPM" style="text-align: center;"></p>
+     <p id="bestCPS" style="text-align: center;"></p>
+    <div style="display:none;" id="share" onclick="sharing()">
+     <div class="sharethis-inline-share-buttons"></div>    
+    </div>
+     <p id="starttext" style="text-align: center; margin-top: 10%; opacity: 0.8;">Click anywhere on this tab or press a key to start</p>
 </body>
 
 <script src="script.js"></script>
