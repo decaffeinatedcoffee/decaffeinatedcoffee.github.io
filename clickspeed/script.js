@@ -1,4 +1,3 @@
-
 var started = false;
 var counterVal = 0;
 var timeSet = 100;
@@ -10,6 +9,7 @@ var bcmkb = localStorage.getItem("bestCPMkb");
 var bcskb = localStorage.getItem("bestCPSkb");
 var bcme;
 var bcse;
+var sharer = false;
 check();
 updateCounter();
 function check(){
@@ -18,8 +18,16 @@ document.getElementById("starttext").style.display = "none";
 setTimeout(()=> document.getElementById("starttext").style.display = "block",900);
 setTimeout(check, 1800)
 }
+if(sharer == true){
+    document.getElementById("starttext").innerText = "The restart function is disabled for 7 secs to share"
+    setTimeout(allow, 7000);
+}
 }
 
+function allow(){
+    document.getElementById("starttext").innerText = "Click anywhere on this tab or press a key to start"
+    sharer = false;
+}
 function updateCounter(){
 if(started == true){
 setTimeout(counter, 1000);
@@ -49,7 +57,7 @@ function counter(){
 }
 
     document.addEventListener("click", function(){
-        if(started == "idle"){
+        if(started == "idle" && sharer == false){
                 location.reload();
             }
         if(started == true || started == false){
@@ -144,13 +152,9 @@ else if(mode == "keyboard"){
         localStorage.setItem("bestCPSkb", bcse);
     }
 }
-
-
-
-
     document.getElementById("bestCPM").innerText = bcme + " CPM";
     document.getElementById("bestCPS").innerText = bcse + " CPS";
-    setTimeout(retry,3000);
+    setTimeout(retry,5000);
     function retry(){
     started = "idle";
     counterVal = 0;
@@ -162,8 +166,12 @@ else if(mode == "keyboard"){
     }
 }
 
+function sharing(){
+sharer = true;
+}
+
 document.onkeypress = function() 
-{if(started == "idle"){
+{if(started == "idle" && sharer == false){
                 location.reload();
             }
     if(started == true || started == false){
