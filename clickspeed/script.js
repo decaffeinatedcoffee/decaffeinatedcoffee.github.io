@@ -153,6 +153,7 @@ else if(mode == "keyboard"){
     }
 }
     document.getElementById("bestCPM").innerText = bcme + " CPM";
+    document.getElementsByTagName('meta')["title"].content = "I got " + bcse + " CPS using my " + mode + "! try to beat it in";
     document.getElementById("bestCPS").innerText = bcse + " CPS";
     setTimeout(retry,5000);
     function retry(){
