@@ -87,6 +87,7 @@ function ShowResults(){
     document.getElementById("timebar").style.display = "none";
     document.getElementById("timer").style.display = "none";
     document.getElementById("best").style.display = "block";
+    document.getElementById("share").style.display = "block";
     document.getElementById("main").innerText = "Your results with "+ mode + ":";
     document.getElementById("best").innerText = "Your best with " + mode + ":";
     document.getElementById("resultCPM").innerText = Math.round(counterVal * 12) + " CPM";
