@@ -154,6 +154,7 @@ else if(mode == "keyboard"){
 }
     document.getElementById("bestCPM").innerText = bcme + " CPM";
     document.getElementById("bestCPS").innerText = bcse + " CPS";
+    sharedText = "I got " + bcse + " CPS with my " + mode + ", try to beat it in " ;
     setTimeout(retry,5000);
     function retry(){
     started = "idle";
