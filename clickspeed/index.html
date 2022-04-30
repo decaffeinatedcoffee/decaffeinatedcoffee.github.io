@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://decaffeinatedcoffee.github.io/assets/sharer/share.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
-  <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=626a227d742b6c001a1bde2a&product=inline-share-buttons" async="async"></script>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐢</text></svg>">
+   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐢</text></svg>">
     <meta property="og:url"                content="https://decaffeinatedcoffee.github.io/clickspeed" />
     <meta property="og:title"              content="Click Speed Test" />
-    <meta property="og:description"        content="How fast can your fingers click?" />
+    <meta property="og:description"        content="How fast your fingers can click?" />
     <meta property="og:image"              content="https://avatars.githubusercontent.com/u/77131841?v=4" />
   <title>Click Speed</title>
 
@@ -37,11 +37,24 @@
      <p style="text-align: center; font-size: 23px; margin-top: 2%; display: none;" id="best">Your best</p>
      <p id="bestCPM" style="text-align: center;"></p>
      <p id="bestCPS" style="text-align: center;"></p>
-    <div style="display:none;" id="share" onclick="sharing()">
-     <!-- ShareThis BEGIN -->
-<div class="sharethis-inline-share-buttons"></div>
-<!-- ShareThis END --> 
-    </div>
+    <div id="share" onclick="sharing()" style="display: none;">
+
+
+
+     <div>
+     <p style="text-align: center;">Share your results</p>
+     <div id="sharer" style="display: flex; justify-content: center; align-items: center;">
+     <img src="https://decaffeinatedcoffee.github.io/assets/sharer/sharerdata/facebook.png" alt="facebook logo" id="fb" style="width: 40px; height: 40px; display: inline;" title="Facebook">
+     <img src="https://decaffeinatedcoffee.github.io/assets/sharer/sharerdata/whatsapp.png" alt="whatsapp logo" id="wpp" style="width: 40px; height: 40px; margin-left: 1%; display: inline;" title="WhatsApp">
+     <img src="https://decaffeinatedcoffee.github.io/assets/sharer/sharerdata/twitter.png" alt="twitter logo" id="tt" style="width: 40px; height: 40px; margin-left: 1%; display: inline;" title="Twitter">
+     </div>
+     </div>
+
+</div> 
+
+
+
+
      <p id="starttext" style="text-align: center; margin-top: 10%; opacity: 0.8;">Click anywhere on this tab or press a key to start</p>
 </body>
 
