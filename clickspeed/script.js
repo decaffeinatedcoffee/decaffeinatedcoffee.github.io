@@ -68,7 +68,11 @@ function counter(){
             }
             
             if(mode == "mouse"){
+    if(window.ontouchstart !== undefined){
+    document.getElementById("mode").innerText = "Touch mode";
+    }else{
     document.getElementById("mode").innerText = "Mouse mode";
+    }
     document.getElementById("main").innerText = "";
     document.getElementById("resultCPM").innerText = "";
     document.getElementById("resultCPS").innerText = "";
@@ -154,7 +158,11 @@ else if(mode == "keyboard"){
 }
     document.getElementById("bestCPM").innerText = bcme + " CPM";
     document.getElementById("bestCPS").innerText = bcse + " CPS";
-    sharedText = "I got " + bcse + " CPS with my " + mode + ", try to beat it in" ;
+    if(window.ontouchstart !== undefined){
+    sharedText = "I got " + bcse + " CPS with my device touch screen, try to beat it in";
+    }else{
+    sharedText = "I got " + bcse + " CPS with my " + mode + ", try to beat it in";
+    }
     setTimeout(retry,5000);
     function retry(){
     started = "idle";
