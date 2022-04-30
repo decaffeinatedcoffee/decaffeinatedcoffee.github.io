@@ -100,8 +100,13 @@ function ShowResults(){
     document.getElementById("timer").style.display = "none";
     document.getElementById("best").style.display = "block";
     document.getElementById("share").style.display = "block";
+    if(window.ontouchstart !== undefined){
+    document.getElementById("main").innerText = "Your results with touch screen:";
+    document.getElementById("best").innerText = "Your best with touch screen:";
+    }else{
     document.getElementById("main").innerText = "Your results with "+ mode + ":";
     document.getElementById("best").innerText = "Your best with " + mode + ":";
+    }
     document.getElementById("resultCPM").innerText = Math.round(counterVal * 12) + " CPM";
     document.getElementById("resultCPS").innerText = Math.round(counterVal / 5) + " CPS";
 
