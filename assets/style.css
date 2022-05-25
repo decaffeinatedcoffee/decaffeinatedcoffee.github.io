@@ -1,1075 +1,153 @@
-html{
-    background-image:url('background.jpg');
-        background-position: center center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        background-repeat: no-repeat;
-        overflow: hidden;
-       height: calc(100vh - 50px);
-    }
-    
-        body {           
+body{
+        background-color: rgb(2, 2, 2);
         margin: 0;
-        padding: 0;
-        overflow-y: hidden;
-        }
-        #bright_effect{
-            background:rgba(0,0,0,0.3);
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            }
-        #content{
-        background:rgba(0,0,0,0.7);
-        position: absolute;
-        height: 100%;
-        width: 50%;
-        border-top-right-radius: 100px;
-        border-bottom-right-radius: 100px;
-        border-right: 3px dashed rgb(58, 62, 88);
-        }
-    #actions{
-     height: 100%;
+        padding: none;
     }
-    @media(max-width: 359px){
-        html {
-            height: 120%; 
-            }
-            #content{
-                height: 120%;
-            }
-        #lang{
-          border-radius: 25px;  
-          position: absolute;
-          bottom: 9%;
-          right: -80%;
-        }
-        #avatar{
-         width: 40px;
-         height: 40px;
-         border-radius: 50%;
-         display: block;
-         margin: 0 auto;
-         margin-top: 5em;
-        }
-        #my_name{
-            position: relative;
-            text-align: center;
-            color: white;
-            font-size: 15px;
-            font-family: 'Montserrat', sans-serif;
-        }
-        #ghst{
-            font-family: 'Montserrat', sans-serif;
-            text-align: center;
-            color: white;
-        }
-        #GHstats{
-        display: block;
-        margin: 0 auto;
-        width: 70%;
-        }
-        #wcydn{
-            color: white;
-            text-align: center;
-            font-size: 17px;
-            font-family: 'Montserrat', sans-serif;
-        }
-        #AM{
-        display: block;
-        margin: 0 auto;
-         background-color: #6e83fd; 
-         color: white;
-         width: 50%;   
-         border-radius: 25px;
-         height: 5%;
-         border: none;
-         cursor: pointer;
-         font-size: 10px;
-        }
-        #PJ{
-            display: block;
-            margin: 0 auto;
-            background-color: #6e83fd; 
-            margin-top: 8%;
-            color: white;
-            width: 50%;
-            border-radius: 25px;
-            height: 5%;
-            border: none;
-            cursor: pointer;
-            font-size: 10px;
-           }
-           #LT{
-            display: block;
-            margin: 0 auto;
-            background-color: #6e83fd;    
-            margin-top: 8%;
-            color: white;
-            width: 50%;
-            border-radius: 25px;
-            height: 5%;
-            border: none;
-            cursor: pointer;
-            font-size: 10px;
-           }
-           #AM:hover{
-            background-color: rgba(110, 131, 253, 0.9);
-       }
-           #PJ:hover{
-            background-color: rgba(110, 131, 253, 0.9);
-       }
-       #LT:hover{
-        background-color: rgba(110, 131, 253, 0.9);
-    }
-    #social_medias img{
-        width: 30px;
-        height: 30px;
-        filter: invert(100%);
-        margin-left: 2%;
-        margin-top: 3%;
-    }
-    #social_medias{
-        margin-top: 5%;
-        margin-left: auto;
-        margin-right: auto;
-        text-align:center;
-    }
-    #social_medias a{
-        color: transparent;
-    }
-    #aboutme{
-        height: 120%;
-        background:rgba(0,0,0,0.7);
-        position: absolute;
-        right: 0px;
-        width: 50%;
-        border-top-left-radius: 100px;
-        border-bottom-left-radius: 100px;
-        border-left: 3px dashed rgb(58, 62, 88);
-        display: none;
-        word-wrap: break-word;
-        }
-        #aboutmeagain{
-            font-size: 17px;
-            margin-top: 7em;
-            font-family: 'Montserrat', sans-serif;
-            text-align: center;
-            color: white;
-        }
-        #easteregg{
-            font-size: 5px;
-            margin-top: 4em;
-            font-family: 'Montserrat', sans-serif;
-            text-align: center;
-            color: white; 
-        }
-        .goback{
-            position: fixed;
-            background-color: rgba(255, 255, 255, 0.1);
-            color: white;
-            font-size: 25px;
-            border: 1px solid black;
-            border-radius: 50px;
-            height: 60px;
-            width: 60px;
-            bottom: 4%;
-            margin-left:10%;
-            cursor: pointer;
-        }
-        .goback:hover{
-            background-color: rgba(255, 255, 255, 0.4);
-        }
-        #projects{
-            background:rgba(0,0,0,0.7);
-            position: absolute;
-            right: 0px;
-            height: 120%;
-            width: 50%;
-            border-top-left-radius: 100px;
-            border-bottom-left-radius: 100px;
-            border-left: 3px dashed rgb(58, 62, 88);
-            overflow-y: scroll;
-            display: none;
-            font-family: 'Montserrat', sans-serif;
-            }
-            #title_projects{
-                margin-top: 4em;
-                color: white;
-                font-size: 20px;
-                text-align: center;
-            }
-            #Pnames{
-                color: white;
-                font-size: 17px;
-                text-align: center;  
-            
-            }
-            a{
-            color: white;
-            }
-            #langs{
-                background:rgba(0,0,0,0.7);
-                position: absolute;
-                height: 120%;
-                width: 50%;
-                border-top-right-radius: 100px;
-                border-bottom-right-radius: 100px;
-                border-right: 3px dashed rgb(58, 62, 88);
-                font-family: 'Montserrat', sans-serif;
-                overflow-y: scroll;
-                display: none;
-                }
-                #LTtitle{
-                    margin-top: 4em;
-                    color: white;
-                    font-size: 17px;
-                    text-align: center;
-                    font-family: 'Montserrat', sans-serif;
-                }
-                #allthestuff{
-                    text-align: center;
-                    color: white;
-                    font-size: 15px;
-                    font-family: 'Montserrat', sans-serif;
-                    
-                }
-                #allthestuff img{
-                    width: 20px;
-                    height: 20px;
-                } 
-                #langs::-webkit-scrollbar {
-                    display: none;
-                }
-            }
-    
-    @media (min-width: 360px) and (max-width: 620px){
-        html {
-            height: 120%; 
-            }
-            #content{
-                height: 120%;
-            }
-        #lang{
-          border-radius: 25px;  
-          position: absolute;
-          bottom: 10px;
-          margin-left: 2%;
-        }
-        #avatar{
-         width: 40px;
-         height: 40px;
-         border-radius: 50%;
-         display: block;
-         margin: 0 auto;
-         margin-top: 3em;
-        }
-        #my_name{
-            position: relative;
-            text-align: center;
-            color: white;
-            font-size: 17px;
-            font-family: 'Montserrat', sans-serif;
-        }
-        #ghst{
-            font-family: 'Montserrat', sans-serif;
-            text-align: center;
-            color: white;
-        }
-        #GHstats{
-        display: block;
-        margin: 0 auto;
-        width: 70%;
-        }
-        #wcydn{
-            color: white;
-            text-align: center;
-            font-size: 17px;
-            font-family: 'Montserrat', sans-serif;
-        }
-        #AM{
-        display: block;
-        margin: 0 auto;
-         background-color: #6e83fd; 
-         color: white;
-         width: 50%;   
-         border-radius: 25px;
-         height: 5%;
-         border: none;
-         cursor: pointer;
-         font-size: 10px;
-        }
-        #PJ{
-            display: block;
-            margin: 0 auto;
-            background-color: #6e83fd; 
-            margin-top: 8%;
-            color: white;
-            width: 50%;
-            border-radius: 25px;
-            height: 5%;
-            border: none;
-            cursor: pointer;
-            font-size: 10px;
-           }
-           #LT{
-            display: block;
-            margin: 0 auto;
-            background-color: #6e83fd;    
-            margin-top: 8%;
-            color: white;
-            width: 50%;
-            border-radius: 25px;
-            height: 5%;
-            border: none;
-            cursor: pointer;
-            font-size: 10px;
-           }
-           #AM:hover{
-            background-color: rgba(110, 131, 253, 0.9);
-       }
-           #PJ:hover{
-            background-color: rgba(110, 131, 253, 0.9);
-       }
-       #LT:hover{
-        background-color: rgba(110, 131, 253, 0.9);
-    }
-    #social_medias img{
-        width: 30px;
-        height: 30px;
-        filter: invert(100%);
-        margin-left: 2%;
-        margin-top: 3%;
-    }
-    #social_medias{
-        margin-top: 5%;
-        margin-left: auto;
-        margin-right: auto;
-        text-align:center;
-    }
-    #social_medias a{
-        color: transparent;
-    }
-    #aboutme{
-        background:rgba(0,0,0,0.7);
-        position: absolute;
-        right: 0px;
-        height: 100%;
-        width: 50%;
-        border-top-left-radius: 100px;
-        border-bottom-left-radius: 100px;
-        border-left: 3px dashed rgb(58, 62, 88);
-        display: none;
-        word-wrap: break-word;
-        }
-        #aboutmeagain{
-            font-size: 17px;
-            margin-top: 7em;
-            font-family: 'Montserrat', sans-serif;
-            text-align: center;
-            color: white;
-        }
-        #easteregg{
-            font-size: 5px;
-            margin-top: 4em;
-            font-family: 'Montserrat', sans-serif;
-            text-align: center;
-            color: white; 
-        }
-        .goback{
-            position: fixed;
-            background-color: rgba(255, 255, 255, 0.1);
-            color: white;
-            font-size: 25px;
-            border: 1px solid black;
-            border-radius: 50px;
-            height: 60px;
-            width: 60px;
-            bottom: 4%;
-            margin-left:10%;
-            cursor: pointer;
-        }
-        .goback:hover{
-            background-color: rgba(255, 255, 255, 0.4);
-        }
-        #projects{
-            background:rgba(0,0,0,0.7);
-            position: absolute;
-            right: 0px;
-            height: 100%;
-            width: 50%;
-            border-top-left-radius: 100px;
-            border-bottom-left-radius: 100px;
-            border-left: 3px dashed rgb(58, 62, 88);
-            overflow-y: scroll;
-            display: none;
-            font-family: 'Montserrat', sans-serif;
-            }
-            #title_projects{
-                margin-top: 4em;
-                color: white;
-                font-size: 20px;
-                text-align: center;
-            }
-            #Pnames{
-                color: white;
-                font-size: 17px;
-                text-align: center;  
-            
-            }
-            a{
-            color: white;
-            }
-            #langs{
-                background:rgba(0,0,0,0.7);
-                position: absolute;
-                height: 100%;
-                width: 50%;
-                border-top-right-radius: 100px;
-                border-bottom-right-radius: 100px;
-                border-right: 3px dashed rgb(58, 62, 88);
-                font-family: 'Montserrat', sans-serif;
-                overflow-y: scroll;
-                display: none;
-                }
-                #LTtitle{
-                    margin-top: 4em;
-                    color: white;
-                    font-size: 20px;
-                    text-align: center;
-                    font-family: 'Montserrat', sans-serif;
-                }
-                #allthestuff{
-                    text-align: center;
-                    color: white;
-                    font-size: 17px;
-                    font-family: 'Montserrat', sans-serif;
-                    
-                }
-                #allthestuff img{
-                    width: 20px;
-                    height: 20px;
-                } 
-                #langs::-webkit-scrollbar {
-                    display: none;
-                }
-            }
-    
-    
-            @media (min-height: 300px) and (max-height: 480px) and (min-width: 651px){
-                #avatar{
-                 width: 40px;
-                 height: 40px;
-                 border-radius: 50%;
-                 margin-left: 2em;
-                 margin-top: 2em;
-                 position: relative;
-                }
-                #lang{
-                  border-radius: 25px;  
-                  position: absolute;
-                  right: 20%;
-                  margin-top: 2em;
-                }
-                #actions{
-                    margin-left: auto;
-                    margin-right: auto;
-                    text-align:center;
-                }
-                #my_name{
-                    position: relative;
-                    text-align: center;
-                    color: white;
-                    font-size: 17px;
-                    font-family: 'Montserrat', sans-serif;
-                }
-                #ghst{
-                    font-size: 10px;
-                    font-family: 'Montserrat', sans-serif;
-                    text-align: center;
-                    color: white;
-                }
-                #GHstats{
-                display: block;
-                margin: 0 auto;
-                width: 60%;
-                }
-                #wcydn{
-                    color: white;
-                    text-align: center;
-                    font-size: 20px;
-                    font-family: 'Montserrat', sans-serif;
-                    height: 0px;
-                }
-                #AM{
-                
-                 background-color: #6e83fd; 
-                 color: white;
-                 width: 20%;   
-                 border-radius: 25px;
-                 height: 8%;
-                 border: none;
-                 cursor: pointer;
-                 font-size: 10px;
-                }
-                #PJ{
-                    
-                    background-color: #6e83fd; 
-                    color: white;
-                    width: 20%;
-                    border-radius: 25px;
-                    height: 8%;
-                    border: none;
-                    cursor: pointer;
-                    font-size: 10px;
-                   }
-                   #LT{
-                  
-                    background-color: #6e83fd;    
-                    color: white;
-                    width: 20%;
-                    border-radius: 25px;
-                    height: 8%;
-                    border: none;
-                    cursor: pointer;
-                    font-size: 10px;
-                   }
-                   #AM:hover{
-                    background-color: rgba(110, 131, 253, 0.9);
-               }
-                   #PJ:hover{
-                    background-color: rgba(110, 131, 253, 0.9);
-               }
-               #LT:hover{
-                background-color: rgba(110, 131, 253, 0.9);
-            }
-            #social_medias img{
-                width: 30px;
-                height: 30px;
-                filter: invert(100%);
-                margin-left: 2%;
-                margin-top: 3%;
-            }
-            #social_medias{
-                margin-left: auto;
-                margin-right: auto;
-                text-align:center;
-            }
-            #social_medias a{
-                color: transparent;
-            }
-            #aboutme{
-                background:rgba(0,0,0,0.7);
-                position: absolute;
-                right: 0px;
-                height: 100%;
-                width: 50%;
-                border-top-left-radius: 100px;
-                border-bottom-left-radius: 100px;
-                border-left: 3px dashed rgb(58, 62, 88);
-                display: none;
-                }
-                #aboutmeagain{
-                    font-size: 20px;
-                    margin-top: 7em;
-                    font-family: 'Montserrat', sans-serif;
-                    text-align: center;
-                    color: white;
-                }
-                #easteregg{
-                    font-size: 10px;
-                    margin-top: 4em;
-                    font-family: 'Montserrat', sans-serif;
-                    text-align: center;
-                    color: white; 
-                }
-                .goback{
-                    position: fixed;
-                    background-color: rgba(255, 255, 255, 0.1);
-                    color: white;
-                    font-size: 25px;
-                    border: 1px solid black;
-                    border-radius: 50px;
-                    height: 60px;
-                    width: 60px;
-                    bottom: 4%;
-                    margin-left:10%;
-                    cursor: pointer;
-                }
-                .goback:hover{
-                    background-color: rgba(255, 255, 255, 0.4);
-                }
-                #projects{
-                    background:rgba(0,0,0,0.7);
-                    position: absolute;
-                    right: 0px;
-                    height: 100%;
-                    width: 50%;
-                    border-top-left-radius: 100px;
-                    border-bottom-left-radius: 100px;
-                    border-left: 3px dashed rgb(58, 62, 88);
-                    overflow-y: scroll;
-                    display: none;
-                    font-family: 'Montserrat', sans-serif;
-                    }
-                    #title_projects{
-                        color: white;
-                        font-size: 30px;
-                        text-align: center;
-                    }
-                    #Pnames{
-                        color: white;
-                        font-size: 20px;
-                        text-align: center;  
-                    
-                    }
-                    a{
-                    color: white;
-                    }
-                    #langs{
-                        background:rgba(0,0,0,0.7);
-                        position: absolute;
-                        height: 100%;
-                        width: 50%;
-                        border-top-right-radius: 100px;
-                        border-bottom-right-radius: 100px;
-                        border-right: 3px dashed rgb(58, 62, 88);
-                        font-family: 'Montserrat', sans-serif;
-                        overflow-y: scroll;
-                        display: none;
-                        }
-                        #LTtitle{
-                            color: white;
-                            font-size: 20px;
-                            text-align: center;
-                            font-family: 'Montserrat', sans-serif;
-                        }
-                        #allthestuff{
-                            text-align: center;
-                            color: white;
-                            font-size: 20px;
-                            font-family: 'Montserrat', sans-serif;
-                            
-                        }
-                        #allthestuff img{
-                            width: 20px;
-                            height: 20px;
-                        } 
-                        #langs::-webkit-scrollbar {
-                            display: none;
-                        }
-                    }
-    
-    
-        @media (min-height: 480px) and (max-height: 920px) and (min-width: 621px){
-            html {
-                height: 120%; 
-                }
-                #content{
-                    height: 120%;
-                }
-            #avatar{
-             width: 40px;
-             height: 40px;
-             border-radius: 50%;
-             margin-left: 2em;
-             margin-top: 3em;
-             position: relative;
-            }
-            #lang{
-              border-radius: 25px;  
-              position: absolute;
-              right: 20%;
-              margin-top: 4em;
-            }
-            #actions{
-                margin-left: auto;
-                margin-right: auto;
-                text-align:center;
-            }
-            #my_name{
-                position: relative;
-                text-align: center;
-                color: white;
-                font-size: 25px;
-                font-family: 'Montserrat', sans-serif;
-            }
-            #ghst{
-                font-family: 'Montserrat', sans-serif;
-                text-align: center;
-                color: white;
-            }
-            #GHstats{
-            display: block;
-            margin: 0 auto;
-            width: 70%;
-            }
-            #wcydn{
-                color: white;
-                text-align: center;
-                font-size: 20px;
-                font-family: 'Montserrat', sans-serif;
-                height: 0px;
-            }
-            #AM{
-            
-             background-color: #6e83fd; 
-             color: white;
-             width: 20%;   
-             border-radius: 25px;
-             height: 5%;
-             border: none;
-             cursor: pointer;
-             font-size: 10px;
-            }
-            #PJ{
-                
-                background-color: #6e83fd; 
-                margin-top: 3%;
-                color: white;
-                width: 20%;
-                border-radius: 25px;
-                height: 5%;
-                border: none;
-                cursor: pointer;
-                font-size: 10px;
-               }
-               #LT{
-              
-                background-color: #6e83fd;    
-                margin-top: 3%;
-                color: white;
-                width: 20%;
-                border-radius: 25px;
-                height: 5%;
-                border: none;
-                cursor: pointer;
-                font-size: 10px;
-               }
-               #AM:hover{
-                background-color: rgba(110, 131, 253, 0.9);
-           }
-               #PJ:hover{
-                background-color: rgba(110, 131, 253, 0.9);
-           }
-           #LT:hover{
-            background-color: rgba(110, 131, 253, 0.9);
-        }
-        #social_medias img{
-            width: 30px;
-            height: 30px;
-            filter: invert(100%);
-            margin-left: 2%;
-            margin-top: 3%;
-        }
-        #social_medias{
-            margin-left: auto;
-            margin-right: auto;
-            text-align:center;
-        }
-        #social_medias a{
-            color: transparent;
-        }
-        #aboutme{
-            background:rgba(0,0,0,0.7);
-            position: absolute;
-            right: 0px;
-            height: 100%;
-            width: 50%;
-            border-top-left-radius: 100px;
-            border-bottom-left-radius: 100px;
-            border-left: 3px dashed rgb(58, 62, 88);
-            display: none;
-            }
-            #aboutmeagain{
-                font-size: 20px;
-                margin-top: 7em;
-                font-family: 'Montserrat', sans-serif;
-                text-align: center;
-                color: white;
-            }
-            #easteregg{
-                font-size: 10px;
-                margin-top: 4em;
-                font-family: 'Montserrat', sans-serif;
-                text-align: center;
-                color: white; 
-            }
-            .goback{
-                position: fixed;
-                background-color: rgba(255, 255, 255, 0.1);
-                color: white;
-                font-size: 25px;
-                border: 1px solid black;
-                border-radius: 50px;
-                height: 60px;
-                width: 60px;
-                bottom: 4%;
-                margin-left:10%;
-                cursor: pointer;
-            }
-            .goback:hover{
-                background-color: rgba(255, 255, 255, 0.4);
-            }
-            #projects{
-                background:rgba(0,0,0,0.7);
-                position: absolute;
-                right: 0px;
-                height: 100%;
-                width: 50%;
-                border-top-left-radius: 100px;
-                border-bottom-left-radius: 100px;
-                border-left: 3px dashed rgb(58, 62, 88);
-                overflow-y: scroll;
-                display: none;
-                font-family: 'Montserrat', sans-serif;
-                }
-                #title_projects{
-                    color: white;
-                    font-size: 30px;
-                    text-align: center;
-                }
-                #Pnames{
-                    color: white;
-                    font-size: 20px;
-                    text-align: center;  
-                
-                }
-                a{
-                color: white;
-                }
-                #langs{
-                    background:rgba(0,0,0,0.7);
-                    position: absolute;
-                    height: 100%;
-                    width: 50%;
-                    border-top-right-radius: 100px;
-                    border-bottom-right-radius: 100px;
-                    border-right: 3px dashed rgb(58, 62, 88);
-                    font-family: 'Montserrat', sans-serif;
-                    overflow-y: scroll;
-                    display: none;
-                    }
-                    #LTtitle{
-                        color: white;
-                        font-size: 20px;
-                        text-align: center;
-                        font-family: 'Montserrat', sans-serif;
-                    }
-                    #allthestuff{
-                        text-align: center;
-                        color: white;
-                        font-size: 20px;
-                        font-family: 'Montserrat', sans-serif;
-                        
-                    }
-                    #allthestuff img{
-                        width: 20px;
-                        height: 20px;
-                    } 
-                    #langs::-webkit-scrollbar {
-                        display: none;
-                    }
-                }
-    
-    
-        @media (min-height: 920px){
-        #avatar{
-         width: 50px;
-         height: 50px;
-         border-radius: 50%;
-         margin-left: 2em;
-         margin-top: 3em;
-         position: relative;
-        }
-        #lang{
-          border-radius: 25px;  
-          position: absolute;
-          right: 20%;
-          margin-top: 2em;
-        }
-        #my_name{
-            position: relative;
-            text-align: center;
-            color: white;
-            font-size: 25px;
-            font-family: 'Montserrat', sans-serif;
-        }
-        #ghst{
-            font-family: 'Montserrat', sans-serif;
-            text-align: center;
-            color: white;
-        }
-        #GHstats{
-        display: block;
-        margin: 0 auto;
-        width: 70%;
-        }
-        #wcydn{
-            color: white;
-            text-align: center;
-            font-size: 20px;
-            font-family: 'Montserrat', sans-serif;
-        }
-        #AM{
-         display: block;
-         margin: 0 auto;
-         background-color: #6e83fd; 
-         color: white;
-         width: 20%;   
-         border-radius: 25px;
-         height: 5%;
-         border: none;
-         cursor: pointer;
-        }
-        #PJ{
-            display: block;
-            margin: 0 auto;
-            background-color: #6e83fd; 
-            margin-top: 3%;
-            color: white;
-            width: 20%;
-            border-radius: 25px;
-            height: 5%;
-            border: none;
-            cursor: pointer;
-           }
-           #LT{
-            display: block;
-            margin: 0 auto;
-            background-color: #6e83fd;    
-            margin-top: 3%;
-            color: white;
-            width: 20%;
-            border-radius: 25px;
-            height: 5%;
-            border: none;
-            cursor: pointer;
-           }
-           #AM:hover{
-            background-color: rgba(110, 131, 253, 0.9);
-       }
-           #PJ:hover{
-            background-color: rgba(110, 131, 253, 0.9);
-       }
-       #LT:hover{
-        background-color: rgba(110, 131, 253, 0.9);
-    }
-    #social_medias img{
-        width: 30px;
-        height: 30px;
-        filter: invert(100%);
-        margin-left: 2%;
-        margin-top: 3%;
-    }
-    #social_medias{
-        margin-left: auto;
-        margin-right: auto;
-        text-align:center;
-    }
-    #social_medias a{
-        color: transparent;
-    }
-    #aboutme{
-        background:rgba(0,0,0,0.7);
-        position: absolute;
-        right: 0px;
-        height: 100%;
-        width: 50%;
-        border-top-left-radius: 100px;
-        border-bottom-left-radius: 100px;
-        border-left: 3px dashed rgb(58, 62, 88);
-        display: none;
-        }
-        #aboutmeagain{
-            font-size: 20px;
-            margin-top: 7em;
-            font-family: 'Montserrat', sans-serif;
-            text-align: center;
-            color: white;
-        }
-        #easteregg{
-            font-size: 10px;
-            margin-top: 4em;
-            font-family: 'Montserrat', sans-serif;
-            text-align: center;
-            color: white; 
-        }
-        .goback{
-            position: fixed;
-            background-color: rgba(255, 255, 255, 0.1);
-            color: white;
-            font-size: 25px;
-            border: 1px solid black;
-            border-radius: 50px;
-            height: 60px;
-            width: 60px;
-            bottom: 4%;
-            margin-left:10%;
-            cursor: pointer;
-        }
-        .goback:hover{
-            background-color: rgba(255, 255, 255, 0.4);
-        }
-        #projects{
-            background:rgba(0,0,0,0.7);
-            position: absolute;
-            right: 0px;
-            height: 100%;
-            width: 50%;
-            border-top-left-radius: 100px;
-            border-bottom-left-radius: 100px;
-            border-left: 3px dashed rgb(58, 62, 88);
-            overflow-y: scroll;
-            display: none;
-            font-family: 'Montserrat', sans-serif;
-            }
-            #title_projects{
-                color: white;
-                font-size: 30px;
-                text-align: center;
-            }
-            #Pnames{
-                color: white;
-                font-size: 20px;
-                text-align: center;  
-            
-            }
-            a{
-            color: white;
-            }
-            #langs{
-                background:rgba(0,0,0,0.7);
-                position: absolute;
-                height: 100%;
-                width: 50%;
-                border-top-right-radius: 100px;
-                border-bottom-right-radius: 100px;
-                border-right: 3px dashed rgb(58, 62, 88);
-                font-family: 'Montserrat', sans-serif;
-                overflow-y: scroll;
-                display: none;
-                }
-                #LTtitle{
-                    color: white;
-                    font-size: 20px;
-                    text-align: center;
-                    font-family: 'Montserrat', sans-serif;
-                }
-                #allthestuff{
-                    text-align: center;
-                    color: white;
-                    font-size: 20px;
-                    font-family: 'Montserrat', sans-serif;
-                    
-                }
-                #allthestuff img{
-                    width: 20px;
-                    height: 20px;
-                } 
-                #langs::-webkit-scrollbar {
-                    display: none;
-                }
-            }
+#start{
+    width: 100vw;
+  height: 70vh;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  filter: brightness(0.5);
+}
+#pres{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+}
+#github{
+    position: absolute;
+    margin-top: 30px;
+    right: 30px;
+}
+#github img{
+    filter: invert();
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+@media(max-width: 399px){
+#name{
+margin-top: 35vh;
+font-size: 20px;
+font-family: 'Montserrat', sans-serif;
+display: none;
+}
+#what{
+    margin-top: 1%;
+font-size: 16px;
+font-family: 'Montserrat', sans-serif; 
+display: none;
+}
+#textAM p{
+    font-size: 15px;
+}
+}
+@media(min-width: 400px){
+#name{
+margin-top: 35vh;
+font-size: 30px;
+font-family: 'Montserrat', sans-serif;
+display: none;
+}
+#what{
+    margin-top: 1%;
+font-size: 24px;
+font-family: 'Montserrat', sans-serif; 
+display: none;
+}
+#textAM p{
+    font-size: 20px;
+}
+}
+
+#info{
+    margin-top: 70vh;
+    position: absolute;
+    background-color: rgb(2, 2, 2);
+    width: 100%;
+    max-height: 500vh;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    display: none;
+}
+#langtools{
+   text-align: center;
+}
+#langtools img{
+    height: 40px;
+    width: 40px;
+    margin-left: 1%;
+}
+#textAM{
+    width: 60vw;
+    display: block;
+    margin: 0 auto;   
+}
+#Pnames{
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+#Pnames a{
+    color: white;
+}
+#social img{
+    width: 40px;
+    height: 40px;
+    filter: invert();
+    margin-left: 10px;
+}
+#social{
+    text-align: center;
+}
+#social a{
+    text-decoration: none;
+}
+#langselector span{
+    width: 28px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    margin-left: 30px;
+    position: absolute;
+}
+#langselector{ 
+    position: absolute;
+    margin-top: 25px;
+}
+#selector{
+    width: 100px;
+    height: 65px;
+    background-color: rgb(223, 223, 223);
+    color: black;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 10px;
+    display: none;
+}
+#selector table{
+    margin-left: auto;
+  margin-right: auto;
+  border-collapse: separate;
+    border-spacing: 0 0.6em;
+}
+#langselector p{
+    color: white;
+    font-size: 20px;
+    float: right;
+    cursor: pointer;
+    margin-left: 1%;
+}
+th{
+    margin-left: 5px;
+    cursor: pointer;
+}
