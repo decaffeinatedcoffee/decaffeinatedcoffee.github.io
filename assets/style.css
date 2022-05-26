@@ -3,6 +3,196 @@ body{
         margin: 0;
         padding: none;
     }
+    ::-webkit-scrollbar-track
+    {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius: 10px;
+        background-color: #191919;
+    }
+    
+    ::-webkit-scrollbar
+    {
+        width: 5px;
+        background-color: #191919;
+    }
+    
+    ::-webkit-scrollbar-thumb
+    {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        background-color: #D62929;
+    }
+#start{
+    width: 100vw;
+  height: 70vh;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  filter: brightness(0.5);
+}
+#pres{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+}
+#github{
+    position: absolute;
+    margin-top: 30px;
+    right: 30px;
+}
+#github img{
+    filter: invert();
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+@media(max-width: 399px){
+#name{
+margin-top: 35vh;
+font-size: 20px;
+font-family: 'Montserrat', sans-serif;
+display: none;
+}
+#what{
+    margin-top: 1%;
+font-size: 16px;
+font-family: 'Montserrat', sans-serif; 
+display: none;
+}
+#textAM p{
+    font-size: 15px;
+}
+}
+@media(min-width: 400px){
+#name{
+margin-top: 35vh;
+font-size: 30px;
+font-family: 'Montserrat', sans-serif;
+display: none;
+}
+#what{
+    margin-top: 1%;
+font-size: 24px;
+font-family: 'Montserrat', sans-serif; 
+display: none;
+}
+#textAM p{
+    font-size: 20px;
+}
+}
+
+#info{
+    margin-top: 70vh;
+    position: absolute;
+    background-color: rgb(2, 2, 2);
+    width: 100%;
+    max-height: 500vh;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    display: none;
+}
+#langtools{
+   text-align: center;
+}
+#langtools img{
+    height: 40px;
+    width: 40px;
+    margin-left: 1%;
+}
+#textAM{
+    width: 60vw;
+    display: block;
+    margin: 0 auto;   
+}
+#Pnames{
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+#Pnames a{
+    color: white;
+}
+#social img{
+    width: 40px;
+    height: 40px;
+    filter: invert();
+    margin-left: 10px;
+}
+#social{
+    text-align: center;
+}
+#social a{
+    text-decoration: none;
+}
+#langselector span{
+    width: 28px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    margin-left: 30px;
+    position: absolute;
+}
+#langselector{ 
+    position: absolute;
+    margin-top: 25px;
+}
+#selector{
+    width: 100px;
+    height: 65px;
+    background-color: rgb(223, 223, 223);
+    color: black;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 10px;
+    display: none;
+}
+#selector table{
+    margin-left: auto;
+  margin-right: auto;
+  border-collapse: separate;
+    border-spacing: 0 0.6em;
+}
+#langselector p{
+    color: white;
+    font-size: 20px;
+    float: right;
+    cursor: pointer;
+    margin-left: 1%;
+}
+th{
+    margin-left: 5px;
+    cursor: pointer;
+}body{
+        background-color: rgb(2, 2, 2);
+        margin: 0;
+        padding: none;
+    }
+    ::-webkit-scrollbar-track
+    {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius: 10px;
+        background-color: #191919;
+    }
+    
+    ::-webkit-scrollbar
+    {
+        width: 5px;
+        background-color: #191919;
+    }
+    
+    ::-webkit-scrollbar-thumb
+    {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        background-color: #D62929;
+    }
 #start{
     width: 100vw;
   height: 70vh;
