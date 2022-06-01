@@ -29,5 +29,6 @@ if(click == false){
    xhttp.setRequestHeader("Content-Type", "application/json");
    xhttp.send(JSON.stringify({"click" : "true"}));
   click = true
+   console.log("click!");
 }
 }
