@@ -1,7 +1,7 @@
 
 ///////////////////////////////This is for analytics function/////////////////////////////////////
-////////////////////////////////No panic, all the infos collected are > City, Region, Country, Time, VPN, Connection type and navigator user agent for device type info///////////////
-/////////////////////////////////I'm not saving any private data, or geographic coordinates///////////////////////////////////// 
+////////////////////////////////No panic, all the infos collected are encrypted and are > City, Region, Country, Time, VPN, Connection type and navigator user agent for device type info///////////////
+/////////////////////////////////I'm not saving any private data, or geographic coordinates///////////////////////////////////////////////////////
 function submitForm(page){
 var analyticsData = {deviceType: navigator.userAgent, lang : navigator.language, page : page};
 var jsonData = JSON.stringify(analyticsData); 
