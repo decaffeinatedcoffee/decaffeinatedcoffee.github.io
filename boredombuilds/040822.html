@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="input">
+    <h1>Please enter your phone number</h1>
+    <div style="margin-left: 7%;">
+    <p id="phone">(11) 900000000</p>
+    <button onclick="dddf('down')">-</button>
+    <button onclick="dddf('up')">+</button>
+    <button onclick="phonef('down')">-</button>
+    <button onclick="phonef('up')">+</button>
+   </div>
+   
+   <h1>Please enter your E-mail</h1>
+   <div style="margin-left: 7%;">
+   <p id="email">X</p>
+   <button onclick="emailf('down')">-</button>
+   <button onclick="emailf('enter')">enter</button>
+   <button onclick="emailf('up')">+</button>
+</div>
+<button style="display:block;margin: 0 auto; margin-top:10%;" onclick="submit();">Submit</button>
+</div>
+<div style="display: none;" id="confirmation">
+<h1>Are you sure these are your adresses?</h1>
+<p id="p"></p>
+<p id="e"></p>
+<button onclick="location.replace('https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley')">Yes</button>
+<button onclick="location.replace('https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley')">Yes, sure</button>
+</div>
+</body>
+
+<script>
+let ddd = 11;
+let phone = 900000000;
+let email = "";
+let counter = -1;
+function dddf(x){
+if(x == "up"){
+    if(ddd < 99){
+    ddd++
+    }
+}else{
+    if(ddd > 11){
+    ddd = ddd - 1;
+    }
+}
+document.getElementById("phone").innerText = "("+ddd+") "+phone;
+}
+function phonef(y){
+ if(y == "up"){
+    if(phone < 1000000000){
+    phone++
+    }
+ }else{
+    if(phone > 900000000){
+    phone = phone - 1
+    }
+ }
+ document.getElementById("phone").innerText = "("+ddd+") "+phone;
+}
+
+function emailf(x){
+if(x == "up"){
+if(counter < chars.length - 1){
+    counter ++;
+    let doc = document.getElementById("email").innerText
+    document.getElementById("email").innerText = email + chars[counter]
+}
+}
+if(x == "enter"){
+    if(chars[counter] != undefined){
+    email = email + chars[counter]
+    counter = -1;
+    }
+}
+if(x == "down"){
+if(counter > 0){
+    counter = counter - 1;
+    let doc = document.getElementById("email").innerText
+    document.getElementById("email").innerText = email + chars[counter]
+}
+}
+}
+
+function submit(){
+    document.getElementById("input").style.display = "none"
+    document.getElementById("p").innerText = "Phone: (" + ddd +") " + phone ;
+    document.getElementById("e").innerText = "E-mail: " + email;
+    document.getElementById("confirmation").style.display = "block"
+}
+let chars = [
+"a",
+"b",
+"c",
+"d",
+"e",
+"f",
+"g",
+"h",
+"i",
+"j",
+"k",
+"l",
+"m",
+"n",
+"o",
+"p",
+"q",
+"r",
+"s",
+"t",
+"u",
+"v",
+"w",
+"x",
+"y",
+"z",
+"0",
+"1",
+"2",
+"3",
+"4",
+"5",
+"6",
+"7",
+"8",
+"9",
+".",
+"@",
+"ç",
+]
+</script>
+<script src="https://decaffeinatedcoffee.github.io/assets/analytics.js" onload="submitForm(window.location.pathname)"></script>
+</html>
