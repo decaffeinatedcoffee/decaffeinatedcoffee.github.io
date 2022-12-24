@@ -1,6 +1,6 @@
 
 ///////////////////////////////This is for analytics function/////////////////////////////////////
-////////////////////////////////No panic, all the infos collected are encrypted and are > City, Region, Country, Time, VPN, 
+////////////////////////////////No panic, all the infos collected are encrypted using CryptoJS and are > City, Region, Country, Time, VPN, 
 ///////////////////////////////Connection type and navigator user agent for device type info///////////////
 /////////////////////////////////I'm not saving any private data, or geographic coordinates//////
 ////////////////////////////////You can see what are the collected data here: https://github.com/decaffeinatedcoffee/analytics
