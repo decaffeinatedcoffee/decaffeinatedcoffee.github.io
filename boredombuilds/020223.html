@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broken calculator</title>
+</head>
+
+<style>
+    body{
+        text-align: center;
+    }
+    .div{
+        display: flex;
+        justify-content: center;
+    }
+    .text{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    button{
+        margin-left: 20px;
+    }
+    .in{
+        width: 30px;
+    }
+    .result{
+        font-size: 35px;
+    }
+</style>
+<body>
+    <h1>Broken Calculator</h1>
+    <h2>Do not use this for real math problems</h2>
+    <br>
+    <div class="div">
+    <input class="in" type="text" placeholder="X" id="fin">
+    <p class="text">+</p>
+    <input  class="in" type="text" placeholder="X" id="sin">
+    <button onclick="calculate()">Get Result</button>
+</div>
+<p class="result" id="result" >=</p>
+</body>
+
+<script>
+    function calculate(){
+        let valx = document.getElementById("fin").value;
+        let valy = document.getElementById("sin").value;
+        let result = valx.toString() + valy.toString();
+        document.getElementById("result").innerText = `= ${result}`;
+    }
+</script>
+</html>
