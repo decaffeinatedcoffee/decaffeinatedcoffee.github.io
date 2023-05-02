@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <meta property="og:url"                content="https://decaffeinatedcoffee.github.io/boredombuilds/numguesser.html" />
+    <meta property="og:title"              content="Number Guesser" />
+    <meta property="og:description"        content="I'll guess any number you think." />
+    <meta property="og:image"              content="https://avatars.githubusercontent.com/u/77131841?v=4" />
+    <title>Number guesser</title>
+</head>
+<style>
+    body{
+        font-family: 'Montserrat', sans-serif;
+    }
+    .start{
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        margin-top: 10%;
+    }
+    .st{
+        font-size: 20px;
+    }
+    .tk{
+        font-size: 18px;
+    }
+    .in{
+        width: 60px;
+    }
+    .bt{
+        display: block;
+        margin: 0 auto;
+        margin-top: 2%;
+    }
+    .loadbox{
+        background-color: rgb(206, 206, 206);
+        height: 20px;
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 10%;
+        text-align: center;
+        display: none;
+    }
+    .loaded{
+        background-color: rgb(0, 173, 0);
+        height: 20px;
+        width: 0px;
+    }
+    .result{
+        margin-top: 10%;
+        text-align: center;
+        display: none;
+    }
+    .rst{
+        font-size: 20px;
+    }
+    .rsv{
+      font-size: 25px;
+    }
+    .result button{
+        display: block;
+        margin: 0 auto;
+    }
+</style>
+<body>
+    <div class="start" id="start">
+    <p class="st">Welcome to number guesser</p>
+    <p class="tk">Think a number</p>
+    <input class="in" type="number" id="input">
+    <button class="bt" onclick="guess()">Guess</button>
+   </div>
+   <div class="loadbox" id="load">
+    <div class="loaded" id="pb">
+    </div>
+      <p id="loadbase"></p>
+   </div>
+     
+      <div id="result" class="result">
+       <p class="rst">The number you thought was:</p>
+       <p class="rsv" id="rsv"></p>
+       <button onclick="location.reload()">Again</button>
+      </div>
+</body>
+<script>
+    var value = 0; 
+    let tn;
+    function guess(){
+    tn = document.getElementById('input').value;
+    if(tn){
+    document.getElementById("start").style.display = 'none';
+    document.getElementById("load").style.display = 'block';
+    value = 0;
+    load();
+    }
+    }
+
+    function load(){
+        if(value < 100){
+        value ++;
+        document.getElementById("pb").style.width = `${value}%`;
+        if(value < 12){
+        document.getElementById("loadbase").innerText = "Reading Thoughts";
+        }else if(value > 12 && value < 21){
+        document.getElementById("loadbase").innerText = "Reading brain waves";
+        }else if(value > 21 && value < 35){
+        document.getElementById("loadbase").innerText = "Encoding memories";
+        }
+        else if(value > 35 && value < 50){
+        document.getElementById("loadbase").innerText = "Uploading...";
+        }
+        else if(value > 50 && value < 70){
+        document.getElementById("loadbase").innerText = "Decoding data";
+        }else if(value > 70 && value < 87){
+        document.getElementById("loadbase").innerText = "Analyzing infos";
+        }else if(value > 87 && value < 100){
+        document.getElementById("loadbase").innerText = "Receiving data";
+        }else if(value == 100){
+        document.getElementById("loadbase").innerText = "Done";
+        setTimeout(showresults, 800);
+        }
+        setTimeout(load, 130);
+        }
+    }
+
+    function showresults(){
+        document.getElementById('rsv').innerText = tn;
+        document.getElementById("load").style.display = 'none';
+        document.getElementById("result").style.display = 'block';
+       }
+</script>
+</html>
