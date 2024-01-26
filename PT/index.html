@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:ital,wght@1,300&family=Poppins:wght@300&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Portifólio</title>
+</head>
+<style>
+    body{
+        background-color: #121212;
+        padding: 0px;
+        margin: 0px;
+        color: white;
+        overflow-x: hidden;
+    }
+    
+    .headerMobile{
+     display: none;
+    }
+  .menuPage{
+    display: none;
+  }
+    .header{
+        width: 100vw;
+        height: 60px;
+    }
+    .langButton{
+        width: 30px;
+        margin-top: 30px;
+        margin-left: 50px;
+        cursor: pointer;
+    }
+    .header span{
+    color: white;
+    font-size: 18px;
+    font-family: 'poppins', sans-serif;
+    margin-top: 15px;
+    cursor: pointer;
+    float: right;
+    margin-right:40px;
+    }
+    .header span:hover{
+        color: rgb(221, 221, 221);
+    }
+    .presentation{
+        width: 100vw;
+        height: 100vh;
+    }
+   .hl{
+    height: 15vh;
+    width: 400px;
+    font-size: 20px;
+    margin-top: 30vh;
+    margin-left: 15vw;
+    float: left;
+   }
+   .hla{
+    font-family: 'lato', sans-serif;
+    font-size: 27px;
+   }
+   .hlb, .hlc{
+    font-family: 'montserrat', sans-serif;
+    font-size: 23px;
+   }
+   .hlc, .purple{
+    color: rgb(138, 89, 187);
+   }
+   .hlb,.hlc{
+    float: left;
+   }
+   .hlc{
+    margin-left: 5px;
+   }
+   .hlimg{
+    width: 20vw;
+    width: 20vw;
+    float: right;
+    margin-top: 15vh;
+    margin-right: 15vw;
+   }
+   .expandArrow{
+    clear: both;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-top: 75vh;
+    width: 30px;
+   }
+   .expandArrow:hover{
+    transform: scale(1.2);
+   }
+   .about{
+    width: 90vw;
+    height: 100vh;
+   }
+   .about span{
+    font-size: 16px;
+    font-family: 'poppins', sans-serif;
+   }
+   .abouttext{
+    width: 40vw;
+    float: right;
+    margin-top: 15%;
+   }
+   .myself{
+    float: left;
+    border-radius: 100px;
+    margin-top: 26vh;
+    margin-left: 10vw;
+   }
+   .contactButtons{
+    clear: both;
+    float: right;
+    margin-top: 40px;
+    margin-right: 13vw;
+   }
+   .contactButtons button{
+    width: 70px;
+    height: 30px;
+    background-color: rgb(95, 40, 150);
+    border: none;
+    color: white;
+    border-radius: 4px;
+    margin-left: 15px;
+    cursor: pointer;
+    font-family: 'lato', sans-serif;
+   }
+   .contactButtons button:hover{
+    transform:scale(1.1);
+   }
+   .skills{
+    width: 100vw;
+    height: 90vh;
+   }
+   .pagestitle{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'montserrat', sans-serif;
+    margin-top: 40px;
+   }
+   .gauge{
+  margin-left: 5vw;
+  margin-top: 40px;
+   }
+   .gaugename{
+    font-size: 18px;
+    font-family: 'lato', sans-serif;
+   }
+   .gaugebackground{
+    width: 90vw;
+    height: 20px;
+    background-color: #313131;
+    border-radius: 25px;
+    margin-top: 10px;
+   }
+   .gaugevalue{
+    background-color: rgb(76, 0, 255);
+    height: 20px;
+    border-radius: 25px;
+    float: left;
+   }
+   .gaugenum{
+    float: left;
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: 'lato', sans-serif;
+   }
+   .projects{
+    width: 100vw;
+    height: 100vh;
+   }
+   .projectsBox{
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+   }
+   .project{
+    width: 300px;
+    height: 400px;
+    border-radius: 25px;
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 5vh;
+    background-color: rgb(27, 27, 27);
+    border: 1px solid rgb(95, 40, 150);
+    text-align: center;
+    cursor: pointer;
+   }
+   .project:hover{
+    transform: scale(1.1);
+   }
+   .projectname{
+    font-size: 18px;
+    font-family: 'lato', sans-serif;
+    margin-top: 10px;
+   }
+   .projectimage{
+    width: 290px;
+    height: 290px;
+    margin-top: 5px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+   }
+   .projectdetails{
+    display: block;
+    font-size: 15px;
+    font-family: 'lato', sans-serif;
+    margin-top: 5px;
+   }
+.pjoptions{
+    position: absolute;
+    width: 290px;
+    height: 290px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 5px;
+    margin-left: 5px;
+    display: none;
+}
+
+.pjbutton{
+ width: 160px;
+ height: 40px;
+ border: none;
+ background-color: rgb(138, 89, 187);
+ color: white;
+ font-size: 16px;
+ padding: 11px;
+ display: block;
+ margin: 0 auto;
+ margin-top: 20px;
+ cursor: pointer;
+}
+
+.pjbutton:hover{
+    background-color: rgb(94, 60, 128);
+}
+.pjlogo{
+    width: 25px;
+    float: left;
+    margin-left: 2px;
+    margin-top: -4px;
+}
+
+.project:hover .pjoptions{
+   display: block;
+   }
+
+.pjbuttonsparent{
+    margin-top: 30%;
+}
+
+.langSelectordd{
+    background-color: rgb(12, 12, 12);
+    width: 110px;
+    height: 100px;
+    margin-left: 10px;
+    position: absolute;
+    margin-top: 60px;
+    border-radius: 25px;
+    display: none;
+}
+.langSelectordd img{
+    width: 22px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.langSelectordd span{
+    font-size: 13px;
+    font-family: 'lato', sans-serif;
+    margin-left:2px;
+    cursor: pointer;
+}
+
+ /*Mobile Styles*/
+   @media only screen and (pointer: coarse){
+
+    .header{
+     display: none;
+    }
+  
+    .headerMobile{
+     display: block;
+     margin-top: 30px;
+     margin-left: 30px;
+     cursor: pointer;
+    }
+    .headerMobile button{
+        display: inline;
+        font-size: 30px;
+        background-color: transparent;
+        border: none;
+        color: white;
+    }
+    .menuPage{
+        position: fixed;
+        width: 50vw;
+        height: 100vh;
+        background-color: #313131;
+        z-index: 7;
+        margin-top: -30px;
+        text-align: center;
+    }
+    .menuclose{
+        font-size: 25px;
+        font-family: 'lato', sans-serif;
+        margin-right: 20px;
+        margin-top: 20px;
+        float: right;
+        user-select: none;
+    }
+    .menuOptionBox{
+        margin-top: 50%;
+    }
+
+    .menuOption{
+    font-size: 20px;
+    font-family: 'poppins', sans-serif;
+    display: block;
+    margin-top: 30px;
+    }
+
+    .langButton{
+    margin-top: 40px;
+    margin-left: auto;
+   }
+
+    .hl{
+    height: 15vh;
+    width: 91vw;
+    font-size: 20px;
+    margin-top: 15vh;
+    margin-left: 8vw;
+   }
+    .hlimg{
+     float: none;
+     width: 45vw;
+     margin-top: 10px;
+     display: block;
+     margin: 0 auto;
+   }
+
+   .expandArrow{
+    clear: both;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-top: 15vh;
+    width: 30px;
+   }
+
+   .about{
+    width: 90vw;
+    height: 100vh;
+   }
+   .about span{
+    font-size: 16px;
+    font-family: 'poppins', sans-serif;
+   }
+   .abouttext{
+    width: 40vw;
+    float: right;
+    margin-top: 10%;
+   }
+   .myself{
+    float: left;
+    border-radius: 100px;
+    margin-top: 5vh;
+    margin-left: 12vw;
+    width: 30vw;
+   }
+.contactButtons{
+    clear: both;
+    padding-bottom: 30px;
+   display: block;
+   margin: 0 auto;
+   margin-top: 20px;
+}
+   .skills{
+    clear: both;
+    width: 100vw;
+    height: 70vh;
+   }
+    
+   .projects{
+    width: 100vw;
+    height: 100vh;
+   }
+   .projectsBox{
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+   }
+   .project{
+    margin-left: 0;
+   }
+ 
+
+
+   .langSelectordd{
+    margin-left: 35px;
+    position: fixed;
+    margin-top: 80%;
+    border-radius: 25px;
+    z-index: 10;
+}
+.langSelectordd img{
+    width: 22px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+
+   }
+
+
+</style>
+<body>
+   
+  <div class="menuPage" id="menuPage">
+   <span class="menuclose" onclick="menuHandler(1)">X</span>
+  <div class="menuOptionBox">
+   <span class="menuOption" onclick="document.getElementById('projects').scrollIntoView(); menuHandler(1);">
+    Projetos
+</span>
+<span class="menuOption" onclick="document.getElementById('skills').scrollIntoView(); menuHandler(1);">
+    Habilidades
+</span>
+<span class="menuOption" onclick="document.getElementById('about').scrollIntoView(); menuHandler(1);">
+    Sobre Mim
+</span>
+
+<img src="/assets/brazil_flag.png" alt="Brazil Flag" class="langButton" onclick="langMenu()">
+</div>
+  </div>
+
+  <div class="langSelectordd" id="langmenu">
+  <img src="/assets/brazil_flag.png" alt="Brazil Flag">
+  <span onclick="location.replace('/PT')">Português</span>
+  <img src="/assets/us_flag.webp" alt="US Flag">
+  <span onclick="location.replace('/EN')">English</span>
+  </div>
+
+    <div class="pageParent">
+
+
+    <div class="presentation"> 
+        <div class="headerMobile">
+            <button onclick="menuHandler(0)">☰</button>
+        </div>
+
+        <div class="header"> 
+            <img src="/assets/brazil_flag.png" alt="Brazil Flag" class="langButton" onclick="langMenu()">
+            <span onclick="document.getElementById('projects').scrollIntoView()">
+        Projetos
+    </span>
+    <span onclick="document.getElementById('skills').scrollIntoView()">
+        Habilidades
+    </span>
+    <span onclick="document.getElementById('about').scrollIntoView()">
+        Sobre Mim
+    </span>
+    </div>
+    <div class="hl">
+     <span class="hla purple">Olá</span>
+     <span class="hla">, me chamo Luís,</span>
+     <span class="hlb">Sou desenvolvedor</span>
+     <span class="hlc">Full Stack.</span>
+    </div>
+    <img src="/assets/presentation.png" alt="Imagem de apresentação." class="hlimg">
+     <img class="expandArrow" onclick="document.getElementById('about').scrollIntoView()" src="/assets/arrox.png" alt="Expand Arrow"></img>
+    </div>
+   
+
+    <div class="about" id="about">
+        <img src="/assets/myself.jpg" class="myself">
+        <div class="abouttext">
+        <span>Me chamo Luís, tenho 18 anos, pretendo cursar Ciências da Computação, com início ainda em 2024, sou um desenvolvedor full stack, tendo trabalhado em diversos projetos pessoais em sua grande maioria open source.</span>
+        <br>
+        <span>Iniciei os estudos na área da programação aos 8 anos, criando códigos em C/C++ utilizando a IDE do Arduíno, no ano de 2020 decidi me aprofundar na área e desde então crio projetos utilizando backend NodeJS e criando páginas em HTML5.</span>
+    </div>
+    <div class="contactButtons">
+    <button onclick="redirect('ghub')">GitHub</button>
+    <button onclick="redirect('lkdn')">LinkedIn</button>
+    <button onclick="redirect('disc')">Discord</button>
+   </div>
+</div>
+
+<div class="skills" id="skills">
+<p class="pagestitle">Habilidades</p>
+
+<div class="gauge"> 
+<span class="gaugename">NodeJS</span>
+<div class="gaugebackground">
+    <div class="gaugevalue"style="width: 87%;">
+    </div>
+    <div class="gaugenum">87%</div>
+</div>
+</div>
+
+
+<div class="gauge"> 
+    <span class="gaugename">HTML5</span>
+    <div class="gaugebackground">
+        <div class="gaugevalue" style="width: 80%;">
+        </div>
+        <div class="gaugenum">80%</div>
+    </div>
+    </div>
+
+    <div class="gauge"> 
+        <span class="gaugename">CSS3</span>
+        <div class="gaugebackground">
+            <div class="gaugevalue"style="width: 72%;">
+            </div>
+            <div class="gaugenum">72%</div>
+        </div>
+        </div>
+
+        <div class="gauge"> 
+            <span class="gaugename">C/C++</span>
+            <div class="gaugebackground">
+                <div class="gaugevalue"style="width: 61%;">
+                </div>
+                <div class="gaugenum">61%</div>
+            </div>
+            </div>
+
+</div>
+
+<div class="projects" id="projects">
+    <p class="pagestitle">Principais projetos</p>
+    <div class="projectsBox">
+  
+
+        <div class="project">
+
+            <div class="pjoptions">
+                <div class="pjbuttonsparent">
+                    <button class="pjbutton" onclick="window.open('https://github.com/decaffeinatedcoffee/GeminiPro')"><img src="/assets/github_light.png" alt="GitHub" class="pjlogo"> Ver no GitHub</button>
+                   </div>
+            </div>
+            <img src="/assets/geminipro.jpg" alt="Capa GeminiPro" class="projectimage">
+              <span class="projectname">GeminiPro</span>
+              <span class="projectdetails">Um switch IoT e APP criado em NodeJS e utilizando ESP8266</span>
+             </div>
+ <div class="project">
+    <div class="pjoptions">
+        <div class="pjbuttonsparent">  
+            <button class="pjbutton" onclick="window.open('https://github.com/decaffeinatedcoffee/Kopi-Bot-Public')"><img src="/assets/github_light.png" alt="GitHub" class="pjlogo"> Ver no GitHub</button>
+            <button class="pjbutton" onclick="window.open('http://kopibot.cyclic.app/')"><img src="/assets/page_light.png" alt="GitHub" class="pjlogo"> Ver Página</button>
+           </div>
+     </div>
+<img src="/assets/kopi.jpg" alt="Capa Kopi" class="projectimage">
+  <span class="projectname">Kopi Bot</span>
+  <span class="projectdetails">Um bot de moderação e jogos feito em NodeJS para o discord.</span>
+ </div>
+ <div class="project">
+    <div class="pjoptions">
+        <div class="pjbuttonsparent">
+            <button class="pjbutton" onclick="window.open('https://github.com/decaffeinatedcoffee/gira-mundo-viagens')"><img src="/assets/github_light.png" alt="GitHub" class="pjlogo"> Ver no GitHub</button>
+            <button class="pjbutton" onclick="window.open('https://giramundoviagens.vercel.app/')"><img src="/assets/page_light.png" alt="GitHub" class="pjlogo"> Ver Página</button>
+           </div>
+     </div>
+    <img src="/assets/giramundo.jpg" alt="Capa Gira Mundo" class="projectimage">
+      <span class="projectname">Gira Mundo Viagens</span>
+      <span class="projectdetails">Um site de agência de viagens criado para um trabalho escolar.</span>
+     </div>
+     <div class="project">
+        <div class="pjoptions">
+            <div class="pjbuttonsparent">
+            <button class="pjbutton" onclick="window.open('https://github.com/decaffeinatedcoffee/padara')"><img src="/assets/github_light.png" alt="GitHub" class="pjlogo"> Ver no GitHub</button>
+            <button class="pjbutton" onclick="window.open('https://padara.vercel.app/')"><img src="/assets/page_light.png" alt="GitHub" class="pjlogo"> Ver Página</button>
+           </div>
+         </div>
+        <img src="/assets/padara.jpg" alt="Capa Padara" class="projectimage">
+          <span class="projectname">Padara</span>
+          <span class="projectdetails">Uma página de informações para uma padaria role play.</span>
+         </div>
+
+    </div>
+</div>
+ 
+ </div>
+ </div>
+</body>
+
+
+<script>
+     function menuHandler(action){
+      if(action == 0){
+      document.getElementById("menuPage").style.display = "block";
+      }else if(action == 1){
+      document.getElementById("menuPage").style.display = "none";
+      }
+     }
+
+     let langDisplayIsVisible = false;
+     function langMenu(){
+        if(langDisplayIsVisible == true){
+            langDisplayIsVisible = false;
+            document.getElementById("langmenu").style.display = "none";
+            return;
+        }else{
+            langDisplayIsVisible = true;
+            document.getElementById("langmenu").style.display = "block";
+            return;
+        }     
+     }
+
+
+     function redirect(dest){
+     if(dest == "ghub"){
+     window.open("https://github.com/decaffeinatedcoffee/");
+     }else if(dest == "lkdn"){
+     window.open("https://www.linkedin.com/in/luis-veiga-filho-a78079287/");
+     }else if(dest == "disc"){
+     window.open("https://discord.com/users/694783408324476931");
+     }
+     }
+</script>
+</html>
