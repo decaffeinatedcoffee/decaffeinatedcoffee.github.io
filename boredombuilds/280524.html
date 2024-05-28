@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body style="text-align: center;">
+
+    <p>Digite um número para saber se ele é par ou ímpar</p>
+    <p id="erro" style="display: none; color: red; margin-top: 10px;" >Já existe um usuário com esse número.</p>
+    <input type="number" placeholder="numero" id="input" style="border: none; outline: none; border-bottom: 1px solid rgb(0, 0, 0); display: block; margin: 0 auto; margin-top: 10px;">
+    <button onclick="resultado()" style="display: block; margin: 0 auto; margin-top: 10px;">Calcular</button>
+</body>
+
+<script>
+    function resultado(){
+         let x = document.getElementById("input");
+        if(x.value){
+        document.getElementById("input").style.marginBottom = "1px solid red";
+        document.getElementById("erro").innerText = "Já existe um usuário com esse número.";
+        document.getElementById("erro").style.display = "block";
+        }else{
+        document.getElementById("input").style.marginBottom = "1px solid red";
+        document.getElementById("erro").innerText = "Insira um número né";
+        document.getElementById("erro").style.display = "block";
+        }
+    }
+
+
+
+</script>
+</html>
